@@ -8,11 +8,10 @@
     <!-- app -->
     <link rel="stylesheet" href="asset/css/common.css">
     <script src="asset/js/app.js"></script>
-    <style>
-    </style>
+
     <!-- bulma -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="asset/css/bulma.css">
+    <script defer src="asset/js/all.js"></script>
     <title>E-Learning | Login</title>
 </head>
 
@@ -26,10 +25,19 @@
   <div class="navbar-menu">
     <div class="navbar-end">
       <a href="index.html" class="navbar-item">
-        Home
+        Dashboard
       </a>
       <a href="login.html" class="navbar-item">
-        Login
+        My Course
+      </a>
+      <a href="login.html" class="navbar-item">
+        Messages
+      </a>
+      <a href="login.html" class="navbar-item">
+        Profile
+      </a>
+      <a href="login.html" class="navbar-item">
+        Logout
       </a>
     </div>
   </div>
@@ -38,13 +46,13 @@
 
 <body>
   
-<section class="hero is-info is-img is-bold is-medium">
+<section class="hero is-info is-img is-bold is-medium" id="login-back">
     <div class="hero-body">
       <div class="container">
-        <h1 class="title">
+        <h1 class="title has-text-black">
           Login
         </h1>
-        <h2 class="subtitle">
+        <h2 class="subtitle has-text-black">
           Belajarlah Lebih giat...
         </h2>
       </div>
@@ -52,26 +60,30 @@
 </section>
 
 <div class="container">
+
   <div class="columns is-centered">
     <div class="column is-narrow">
         <div class="tile">
             <div class="tile is-parent">
+                <hr class="dropdown-divider">
               <article class="tile is-child box">
-                <form action="" method="post">
+                <h3 class="title is-marginless">Welcome back</h3>
+                <hr class="dropdown-divider">
+                <form action="." method="post">
                     <div class="field">
                         <p class="control has-icons-left has-icons-right">
-                          <input class="input" type="email" placeholder="Email">
+                          <input class="input" type="email" placeholder="Email" id="email" required>
                           <span class="icon is-small is-left">
                             <i class="fas fa-envelope"></i>
                           </span>
-                          <span class="icon is-small is-right">
+                          <span class="icon is-small is-right is-invisible">
                             <i class="fas fa-check"></i>
                           </span>
                         </p>
                       </div>
                       <div class="field">
                         <p class="control has-icons-left">
-                          <input class="input" type="password" placeholder="Password">
+                          <input class="input" type="password" placeholder="Password" id="password" required>
                           <span class="icon is-small is-left">
                             <i class="fas fa-lock"></i>
                           </span>
@@ -79,17 +91,40 @@
                       </div>
                       <div class="field">
                         <p class="control">
-                          <button class="button is-success">
-                            Login
-                          </button>
+                            <label class="checkbox">
+                                <input type="checkbox">
+                                Remember me
+                              </label>
+                        </p>
+                      </div>
+                      <div class="field">
+                        <p class="control">
+                          <input type="submit" value="Login" class="button is-success" id="login-button">
                         </p>
                       </div>
                 </form>
+                <div class="columns is-centered is-marginless">
+                  <div class="column is-narrow">
+                      <h3 class="subtitle">OR</h3>
+                  </div>
+                </div>
+                <div class="buttons is-centered">
+                    <a href="" class="button is-info is-narrow">Facebook</a>
+                    <a href="" class="button is-danger is-narrow">Google</a>
+                </div>
+                
+                
               </article>
+            </div>
+        </div>
+        <div class="columns is-centered is-marginless">
+            <div class="column is-narrow">
+                <p>No account? <a href="register.html">Create One</a></p>
             </div>
         </div>
     </div>
   </div>
+
 </div>
 
 </body>
