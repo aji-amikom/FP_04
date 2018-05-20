@@ -12,7 +12,8 @@
     <!-- bulma -->
     <link rel="stylesheet" href="asset/css/bulma.css">
     <script defer src="asset/js/all.js"></script>
-    <title>E-Learning | Login</title>
+
+    <title>E-Learning | Register</title>
 </head>
 
 <!-- navbar component -->
@@ -47,7 +48,78 @@
 <body>
 
 <div class="container">
-
+    <div class="columns is-centered is-marginless">
+        <div class="column is-9">
+            <div class="columns is-mobile">
+                <div class="column is-half is-offset-one-quarter">
+                    <div class="tabs is-centered is-large">
+                        <ul>
+                            <li class="is-active"><a>Students</a></li>
+                            <li><a>Teacher</a></li>
+                        </ul>
+                    </div>
+                    <div class="box">
+                        <article class="media">
+                            <div class="media-content">
+                                <p class="title is-4">
+                                    Create your student account
+                                </p>
+                                <p class="subtitle is-6">
+                                    Your student account is your portal to all things E-Learning: your classroom, projects, forums, career resources, and more!
+                                </p>
+                            <form action="." method="post">
+                                <div class="field">
+                                    <p class="control has-icons-left has-icons-right">
+                                        <input class="input" type="text" placeholder="Full Name" id="name" required>
+                                        <span class="icon is-small is-left">
+                                        <i class="fas fa-user"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="field">
+                                    <p class="control has-icons-left has-icons-right">
+                                        <input class="input" type="email" placeholder="Email" id="email" required>
+                                        <span class="icon is-small is-left">
+                                        <i class="fas fa-envelope"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="field">
+                                    <p class="control has-icons-left">
+                                        <input class="input" type="password" placeholder="Password" id="password" required>
+                                        <span class="icon is-small is-left">
+                                        <i class="fas fa-lock"></i>
+                                        </span>
+                                    </p>
+                                </div>
+                                <div class="field">
+                                    <p class="control">
+                                        By clicking Sign Up, you agree to our Terms of Use and our Privacy Policy.
+                                    </p>
+                                </div>
+                                <div class="field">
+                                    <p class="control">
+                                        <input type="submit" value="Sign Up" class="button is-success" id="login-button">
+                                    </p>
+                                </div>
+                            </form>
+                            <hr class="dropdown-divider">
+                                <div class="columns is-centered">
+                                    <div class="column is-narrow">
+                                        <p>or sign up with one of these services</p>
+                                    </div>
+                                </div>
+                                <div class="buttons is-centered">
+                                    <a href="" class="button is-info is-narrow">Facebook</a>
+                                    <a href="" class="button is-danger is-narrow">Google</a>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 
 </body>
