@@ -6,7 +6,7 @@ $('#student-tab').on('click', function(){
         $('#teacher-tab').toggleClass('is-active','');    
     }
     $('#teacher-login').hide();
-    $('#student-login').show();
+    $('#student-login').show('slow');
 })
 
 $('#teacher-tab').on('click', function(){
@@ -15,5 +15,5 @@ $('#teacher-tab').on('click', function(){
         $('#student-tab').toggleClass('is-active','');
     }
     $('#student-login').hide();
-    $('#teacher-login').show();
+    $('#teacher-login').show('show');
 })
