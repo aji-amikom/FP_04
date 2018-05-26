@@ -31,22 +31,20 @@
 
 <div ng-include="'navbar.html'"></div>
 
-<body>
-
-
+<body ng-controller="detailCourse">
 
 <div class="container">
     <nav class="breadcrumb mtm mlm" aria-label="breadcrumbs">
     <ul>
-        <li><a href="#">Courses</a></li>
-        <li><a href="#">Details</a></li>
-        <li class="is-active"><a href="#" aria-current="page">Learn AngularJs </a></li>
+        <li><a href="index.html">Courses</a></li>
+        <li><a href="materi-list.html">Details</a></li>
+        <li class="is-active"><a href="#" aria-current="page"> {{ courses.name }} </a></li>
     </ul>
     </nav>
     <div class="columns is-centered is-marginless">
         <div class="column is-9">
             <div class="videoWrapper">
-                <iframe src="https://www.youtube.com/embed/zQ9Wtz6QVv4?autoplay=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen autoplay></iframe>
+                <iframe id="iframeid" src="https://www.youtube.com/embed/oKj0iib8n58?autoplay=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen autoplay></iframe>
             </div>
         </div>
         <div class="column is-3">
@@ -57,19 +55,11 @@
                 <ul class="menu-list">
                     <li>
                         <div class="is-active columns">
-                        <div class="column is-9">Learn AngularJs</div>
+                        <div class="column is-9">{{ courses.name }}</div>
                         <div class="column"><i class="fa fa-bookmark fa-2x" aria-hidden="true"></i></div>
                         </div>
                     <ul>
-                        <li><a>AngularJs Home</a></li>
-                        <li><a>AngularJs Intro</a></li>
-                        <li><a>AngularJs Expressions</a></li>
-                        <li><a>AngularJs Modules</a></li>
-                        <li><a>AngularJs Directives</a></li>
-                        <li><a>AngularJs Model</a></li>
-                        <li><a>AngularJs Data Binding</a></li>
-                        <li><a>AngularJs Controllers</a></li>
-                        <li><a>AngularJs Scopes</a></li>
+                        <li ng-repeat="x in materials"><a ng-click="changeVideo(x.video, $index)" >{{ x.name }}</a></li>
                     </ul>
                     </li>
                 </ul>
@@ -84,21 +74,21 @@
     <div class="columns">
         <div class="content column is-9 mlm">
             <!-- diskripsi kursus -->
-                <h1>AngularJs</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem ipsum sint accusantium! Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                <h1>{{ courses.name }}</h1>
+                <p>{{ courses.description }}</p>
             <!-- <hr class="dropdown-divider"> -->
             <!-- profil guru -->
             <article class="media"></article>
             <article class="media">
                 <p class="image is-128x128 mrs">
-                    <img src="https://bulma.io/images/placeholders/128x128.png">
+                    <img id="picture" src="">
                 </p>
             <div class="media-content">
                 <div class="content">
                 <p>
-                    <strong>Admam Smith</strong></small>
+                    <strong>{{ courses.author.name }}</strong></small>
                     <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. 
+                    {{ courses.author.description }}
                 </p>
                 </div>
                 <nav class="level is-mobile">
@@ -118,7 +108,7 @@
             <div class="box">
                 <div class="columns">
                     <div class="column is-3">
-                        <div class="tile is-centered"><h1 class="title is-narrow">4.5</h1></div>
+                        <div class="tile is-centered"><h1 class="title is-narrow">{{ courses.rating.totalPoint }}</h1></div>
                     </div>
                     <div class="column is-9">
                             <progress class="progress is-success is-small is-radiusless" value="70" max="100">70%</progress>

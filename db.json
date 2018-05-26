@@ -1,15 +1,44 @@
 {
-    "posts": [
-      { "id": 1, "title": "Post 1" },
-      { "id": 2, "title": "Post 2" },
-      { "id": 3, "title": "Post 3" }
-    ],
-    "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 },
-      { "id": 2, "body": "some comment", "postId": 1 }
-    ],
-    "profile": {
-      "name": "typicode"
-    }
+    "courses": [
+      { 
+        "name": "J-Fla",
+        "description" : "courses des: lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "rating" : {
+          "totalPoint":"4.7",
+          "5start" : "70%",
+          "4start" : "40%",
+          "3start" : "30%",
+          "2start" : "20%",
+          "1start" : "10%"
+        },
+        "materials": {
+          "0":{
+            "name" : "JFla - Shape Of You",
+            "video" : "MhQKe-aERsU"
+          },
+          "1" : {
+            "name" : "JFla - Don't Let Me Down ",
+            "video" : "C3e_NZIFfrk"
+          },
+          "2" : {
+            "name" : "JFla - The Spectre",
+            "video" : "5nI2i84hZP0"
+          },
+          "3" : {
+            "name" : "JFla - The Ocean3",
+            "video" : "pez6ferJlxs"
+          },
+          "4" : {
+            "name" : "J-Fla - Tired",
+            "video" : "zQ9Wtz6QVv4"
+          }
+        },
+        "author": {
+          "name" : "Aji Kamaludin",
+          "picture": "https://bulma.io/images/placeholders/128x128.png",
+          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
+        }
+      }
+    ]
 }
   
