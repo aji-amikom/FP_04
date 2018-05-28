@@ -1,49 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="RootApp">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
+    <!-- angular -->
+    <script src="asset/plugins/angularjs/angular.min.js"></script>
+
+    <!-- jquery -->
+    <script src="asset/plugins/jquery/jquery-3.3.1.js"></script>
+
     <!-- app -->
     <link rel="stylesheet" href="asset/css/common.css">
-    <script src="asset/js/app.js"></script>
 
     <!-- bulma -->
     <link rel="stylesheet" href="asset/css/bulma.css">
     <script defer src="asset/js/all.js"></script>
 
+    <!-- spacing -->
+    <link rel="stylesheet" href="asset/plugins/css-spacing/css-spacing.css">
+    
     <title>E-Learning | Register</title>
 </head>
 
-<!-- navbar component -->
-<nav class="navbar is-dark">
-  <div class="navbar-brand">
-    <a class="navbar-item" href="index.html">
-      E-Learning
-    </a>
-  </div>
-  <div class="navbar-menu">
-    <div class="navbar-end">
-      <a href="index.html" class="navbar-item">
-        Dashboard
-      </a>
-      <a href="login.html" class="navbar-item">
-        My Course
-      </a>
-      <a href="login.html" class="navbar-item">
-        Messages
-      </a>
-      <a href="login.html" class="navbar-item">
-        Profile
-      </a>
-      <a href="login.html" class="navbar-item">
-        Sign In
-      </a>
-    </div>
-  </div>
-</nav>
-<!-- end of navbar component -->
+<div ng-include="'navbar.html'"></div>
 
 <body>
 
@@ -54,13 +34,13 @@
                 <div class="column is-half is-offset-one-quarter">
                     <div class="tabs is-centered is-large is-fullwidth">
                         <ul>
-                            <li class="is-active"><a>Student</a></li>
-                            <li><a>Teacher</a></li>
+                            <li class="is-active" id="student-tab"><a>Student</a></li>
+                            <li id="teacher-tab"><a>Teacher</a></li>
                         </ul>
                     </div>
                     <div class="box">
                         <article class="media">
-                            <div class="media-content">
+                            <div class="media-content" id="student-login">
                                 <p class="title is-4">
                                     Create your student account
                                 </p>
@@ -85,13 +65,16 @@
                                     </p>
                                 </div>
                                 <div class="field">
+                                        
                                     <p class="control has-icons-left">
-                                        <input class="input" type="password" placeholder="Password" id="password" required>
+                                        <input class="input" type="password" placeholder="Password" id="password"required>
                                         <span class="icon is-small is-left">
                                         <i class="fas fa-lock"></i>
                                         </span>
                                     </p>
                                 </div>
+                                <script>
+                                </script>
                                 <div class="field">
                                     <p class="control">
                                         By clicking Sign Up, you agree to our Terms of Use and our Privacy Policy.
@@ -99,7 +82,7 @@
                                 </div>
                                 <div class="field">
                                     <p class="control">
-                                        <input type="submit" value="Sign Up" class="button is-success" id="login-button">
+                                        <input type="submit" value="Sign Up" class="button is-success login-button">
                                     </p>
                                 </div>
                             </form>
@@ -114,6 +97,61 @@
                                     <a href="" class="button is-danger is-narrow">Google</a>
                                 </div>
                             </div>
+
+                            <div class="media-content" id="teacher-login">
+                                    <p class="title is-4">
+                                        Create your teacher account
+                                    </p>
+                                    <p class="subtitle is-6">
+                                        Your teacher account is your portal to all things E-Learning: your classroom, projects, forums, career resources, and more!
+                                    </p>
+                                <form action="." method="post">
+                                    <div class="field">
+                                        <p class="control has-icons-left has-icons-right">
+                                            <input class="input" type="text" placeholder="Full Name" id="name-teacher" required>
+                                            <span class="icon is-small is-left">
+                                            <i class="fas fa-user"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="field">
+                                        <p class="control has-icons-left has-icons-right">
+                                            <input class="input" type="email" placeholder="Email" id="email-teacher" required>
+                                            <span class="icon is-small is-left">
+                                            <i class="fas fa-envelope"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="field">
+                                        <p class="control has-icons-left">
+                                            <input class="input" type="password" placeholder="Password" id="password-teacher" required>
+                                            <span class="icon is-small is-left">
+                                            <i class="fas fa-lock"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="field">
+                                        <p class="control">
+                                            By clicking Sign Up, you agree to our Terms of Use and our Privacy Policy.
+                                        </p>
+                                    </div>
+                                    <div class="field">
+                                        <p class="control">
+                                            <input type="submit" value="Sign Up" class="button is-success login-button">
+                                        </p>
+                                    </div>
+                                </form>
+                                <hr class="dropdown-divider">
+                                    <div class="columns is-centered">
+                                        <div class="column is-narrow">
+                                            <p>or sign up with one of these services</p>
+                                        </div>
+                                    </div>
+                                    <div class="buttons is-centered">
+                                        <a href="" class="button is-info is-narrow">Facebook</a>
+                                        <a href="" class="button is-danger is-narrow">Google</a>
+                                    </div>
+                                </div>
                         </article>
                     </div>
                     <div class="columns is-centered is-marginless">
@@ -128,16 +166,14 @@
     </div>
 </div>
 
+<div ng-include="'footer.html'"></div>
+
+<!-- app -->
+<script src="asset/js/app.js"></script>
+
+<!-- ng-main-controller -->
+<script src="asset/plugins/angularjs/controllers/app.js"></script>
+<!-- <script src="asset/plugins/angularjs/controllers/componen.js"></script> -->
+
 </body>
-
-<footer class="footer">
-  <div class="container">
-    <div class="content has-text-centered">
-      <p>
-        <strong>This is Common Footer</strong> by Aji Kamaludin
-      </p>
-    </div>
-  </div>
-</footer>
-
 </html>

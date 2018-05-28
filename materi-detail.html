@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="RootApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- angular -->
+    <script src="asset/plugins/angularjs/angular.min.js"></script>
+
+    <!-- jquery -->
+    <script src="asset/plugins/jquery/jquery-3.3.1.js"></script>
+
+    <!-- app -->
+    <link rel="stylesheet" href="asset/css/common.css">
+
+    <!-- bulma -->
+    <link rel="stylesheet" href="asset/css/bulma.css">
+    <script defer src="asset/js/all.js"></script>
+
+    <!-- spacing -->
+    <link rel="stylesheet" href="asset/plugins/css-spacing/css-spacing.css">
+
+    <!-- font-awesome -->
+    <!-- <link rel="stylesheet" href="asset/plugins/fontawesome/css/fontawesome-all.css">
+    <link rel="stylesheet" href="asset/plugins/fontawesome/css/fontawesome.css"> -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+    <title>E-Learning | Learn AngularJs</title>
+</head>
+
+<div ng-include="'navbar.html'"></div>
+
+<body ng-controller="detailCourse">
+
+<div class="container">
+    <nav class="breadcrumb mtm mlm" aria-label="breadcrumbs">
+    <ul>
+        <li><a href="index.html">Courses</a></li>
+        <li><a href="materi-list.html">Details</a></li>
+        <li class="is-active"><a href="#" aria-current="page"> {{ courses.name }} </a></li>
+    </ul>
+    </nav>
+    <div class="columns is-centered is-marginless">
+        <div class="column is-9">
+            <div class="videoWrapper">
+                <iframe id="iframeid" src="https://www.youtube.com/embed/oKj0iib8n58?autoplay=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen autoplay></iframe>
+            </div>
+        </div>
+        <div class="column is-3">
+            <aside class="menu">
+                <p class="menu-label">
+                    Material List
+                </p>
+                <ul class="menu-list">
+                    <li>
+                        <div class="is-active columns">
+                        <div class="column is-9">{{ courses.name }}</div>
+                        <div class="column"><i class="fa fa-bookmark fa-2x" aria-hidden="true"></i></div>
+                        </div>
+                    <ul>
+                        <li ng-repeat="x in materials"><a ng-click="changeVideo(x.video, $index)" >{{ x.name }}</a></li>
+                    </ul>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column is-offset-9">
+            
+        </div>
+    </div>
+    <div class="columns">
+        <div class="content column is-9 mlm">
+            <!-- diskripsi kursus -->
+                <h1>{{ courses.name }}</h1>
+                <p>{{ courses.description }}</p>
+            <!-- <hr class="dropdown-divider"> -->
+            <!-- profil guru -->
+            <article class="media"></article>
+            <article class="media">
+                <p class="image is-128x128 mrs">
+                    <img id="picture" src="">
+                </p>
+            <div class="media-content">
+                <div class="content">
+                <p>
+                    <strong>{{ courses.author.name }}</strong></small>
+                    <br>
+                    {{ courses.author.description }}
+                </p>
+                </div>
+                <nav class="level is-mobile">
+                <div class="level-left">
+                    <a class="level-item">
+                    <span class="icon is-small"><i class="fa fa-share-alt"></i></span>
+                    </a>
+                    <a class="level-item">
+                    <span class="icon is-small"><i class="fas fa-heart"></i></span>
+                    </a>
+                </div>
+                </nav>
+            </div>
+            </article>
+
+            <!-- rating -->
+            <div class="box">
+                <div class="columns">
+                    <div class="column is-3">
+                        <div class="tile is-centered"><h1 class="title is-narrow">{{ courses.rating.totalPoint }}</h1></div>
+                    </div>
+                    <div class="column is-9">
+                            <progress class="progress is-success is-small is-radiusless" value="70" max="100">70%</progress>
+                            <progress class="progress is-info is-small is-radiusless" value="40" max="100">40%</progress>
+                            <progress class="progress is-primary is-small is-radiusless" value="60" max="100">60%</progress>
+                            <progress class="progress is-warning is-small is-radiusless" value="50" max="100">50%</progress>
+                            <progress class="progress is-danger is-small is-radiusless" value="15" max="100">15%</progress>
+                            <p>
+                                <i class="fa fa-star fa-3x" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-3x" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-3x" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-3x" aria-hidden="true"></i>
+                                <i class="fa fa-star fa-3x" aria-hidden="true"></i>
+                            </p>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- komentar -->
+            <article class="media">
+                    <figure class="media-left">
+                      <p class="image is-64x64">
+                        <img src="https://bulma.io/images/placeholders/128x128.png">
+                      </p>
+                    </figure>
+                    <div class="media-content">
+                      <div class="content">
+                        <p>
+                          <strong>Barbara Middleton</strong>
+                          <br>
+                          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.
+                        </p>
+                      </div>
+                  
+                      <article class="media">
+                        <figure class="media-left">
+                          <p class="image is-48x48">
+                            <img src="https://bulma.io/images/placeholders/96x96.png">
+                          </p>
+                        </figure>
+                        <div class="media-content">
+                          <div class="content">
+                            <p>
+                              <strong>Sean Brown</strong>
+                              <br>
+                              Donec sollicitudin urna eget eros malesuada sagittis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                            </p>
+                          </div>
+                        </div>
+                      </article>
+                  
+                      <article class="media">
+                        <figure class="media-left">
+                            <p class="image is-48x48">
+                            <img src="https://bulma.io/images/placeholders/96x96.png">
+                            </p>
+                        </figure>
+                        <div class="media-content">
+                            <div class="content">
+                            <p>
+                                <strong>Kayli Eunice </strong>
+                                <br>
+                                Sed convallis scelerisque mauris, non pulvinar nunc mattis vel. Maecenas varius felis sit amet magna vestibulum euismod malesuada cursus libero.
+                            </p>
+                            </div>
+                        </div>
+                        </article>
+                    </div>
+                    </article>
+                    
+                    <article class="media">
+                    <figure class="media-left">
+                        <p class="image is-64x64">
+                        <img src="https://bulma.io/images/placeholders/128x128.png">
+                        </p>
+                    </figure>
+                    <div class="media-content">
+                        <div class="field">
+                        <p class="control">
+                            <textarea class="textarea" placeholder="Add a comment..."></textarea>
+                        </p>
+                        </div>
+                        <div class="field">
+                        <p class="control">
+                            <button class="button">Post comment</button>
+                        </p>
+                        </div>
+                    </div>
+                    </article>
+        </div>
+        <div class="column is-3">
+            <!-- button -->
+            <div class="columns mbxxl">
+                <div class="column is-half">
+                    <button class="button is-danger login-button mlxs"> Back </button>
+                </div>
+                <div class="column is-half">
+                    <button class="button is-danger login-button mlxs"> Next </button>
+                </div>
+            </div>
+            <!-- panel -->
+            <nav class="panel">
+            <p class="panel-heading">
+                Related Courses
+            </p>
+            <a class="panel-block is-active">
+                <span class="panel-icon">
+                <i class="fas fa-book" aria-hidden="true"></i>
+                </span>
+                BulmaCSS
+            </a>
+            <a class="panel-block">
+                <span class="panel-icon">
+                <i class="fas fa-book" aria-hidden="true"></i>
+                </span>
+                VueJS
+            </a>
+            <a class="panel-block">
+                <span class="panel-icon">
+                <i class="fas fa-book" aria-hidden="true"></i>
+                </span>
+                Google Map Api
+            </a>
+            </nav>
+        </div>          
+    </div>
+    <div class="columns">
+        <div class="column is-9">
+                
+        </div>
+    </div>
+</div>
+
+<div ng-include="'footer.html'"></div>
+
+<!-- app -->
+<script src="asset/js/app.js"></script>
+
+<!-- ng-main-controller -->
+<script src="asset/plugins/angularjs/controllers/app.js"></script>
+<!-- <script src="asset/plugins/angularjs/controllers/componen.js"></script> -->
+</body>
+
+
+</html>
