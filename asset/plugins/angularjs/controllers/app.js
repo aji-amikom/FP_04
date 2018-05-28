@@ -2,7 +2,6 @@ var app = angular.module("RootApp", []);
 
 if(localStorage.getItem("id") == null){
     localStorage.setItem("id", 0);
-    console.log(localStorage.getItem("id"));
 }
     
 app.controller('detailCourse',function($scope, $http){
@@ -10,7 +9,7 @@ app.controller('detailCourse',function($scope, $http){
     $scope.minVal = true;
     $http.get("db.json")
     .then(function(response) {
-        id = localStorage.getItem("id");
+        id = localStorage.getItem("id") == null ? 0 : localStorage.getItem("id");
 
         $scope.courses = response.data.courses[id];
         $scope.materials = response.data.courses[id].materials;
@@ -28,28 +27,18 @@ app.controller('detailCourse',function($scope, $http){
         $scope.videoNow = $index;
         console.log(id + ',' + $index+ ','+ $scope.videoNow); 
     }
-
-    $scope.videoBack = function(){
-        console.log($scope.videoNow);
-        if($scope.videoNow <= 0){
-            $scope.minVal = true;
-            return;
-        }
-        $scope.videoNow = $scope.videoNow - 1;
-        $scope.videoId = $scope.materials[$scope.videoNow].video;
-        $scope.url = 'https://www.youtube.com/embed/'+ $scope.videoId +'?autoplay=0'
-        document.getElementById('iframeid').src = $scope.url;
-    }
-
-    $scope.videoNext = function(){
-        console.log($scope.videoNow);
-        if($scope.videoNow >= materialLength){
-            $scope.maxVal = true;
-            return;
-        }
-        $scope.videoNow = $scope.videoNow + 1;
-        $scope.videoId = $scope.materials[$scope.videoNow].video;
-        $scope.url = 'https://www.youtube.com/embed/'+ $scope.videoId +'?autoplay=0'
-        document.getElementById('iframeid').src = $scope.url;
-    }
 })
+
+app.controller('loginController',function($scope){
+    $scope.validateEmail = function(){
+        if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{1,2})+$/.test(email.value)){
+            $scope.cssEmail = "";
+        }else{
+            $scope.cssEmail = "is-danger";
+        }
+    }
+    document.addEventListener('change',function(){
+        console.log("change")
+    })
+})
+
