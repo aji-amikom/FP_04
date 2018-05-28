@@ -115,5 +115,32 @@ footer .social-footer a {
 	font-size: 20px;
 }
 
+.contact-us-form .input, .contact-us-form .textarea {
+	box-shadow: none;
+}
 
+.contact-us-form .input:focus, .contact-us-form .input:active,
+.contact-us-form .textarea:focus, .contact-us-form .textarea:active {
+	border-color: #92278f !important;
+	box-shadow: none;
+}
 
+.contact-address {
+	font-size: .875rem;
+}
+
+.contact-address .single-address .icon {
+	width: 65px;
+	height: 65px;
+	line-height: 63px;
+	border-radius: 50%;
+	border: 1px solid #e5e5e5;
+	text-align: center;
+	font-size: 30px;
+	margin-top: 7px;
+}
+
+.contact-address .single-address .text {
+	padding-left: 26px;
+	margin-top: 20px;
+}
