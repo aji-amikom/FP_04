@@ -1,0 +1,119 @@
+.hero.hero-banner {
+	background: linear-gradient(rgba(57,39,121,.8), rgba(57,39,121,.8)), url(http://www.ansonika.com/udema/img/home_section_1.jpg) no-repeat center center fixed;
+	background-size: cover;
+}
+
+.custom-search-input {
+	width: 600px;
+	position: relative;
+	margin: 20px auto 0;
+	padding: 0;
+}
+
+.custom-search-input .search-query {
+	height: 54px;
+}
+
+span.hr-purple {
+	width: 120px;
+	height: 2px;
+	background-color: #e1e1e1;
+	display: block;
+	margin: auto;
+}
+
+span.hr-purple em {
+	width: 60px;
+	height: 2px;
+	background-color: #662d91;
+	display: block;
+	margin: auto;
+}
+
+.card-custom {
+	border-radius: .375rem !important;
+	box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);
+}
+
+.card-custom img {
+	border-top-left-radius: .375rem !important;
+	border-top-right-radius: .375rem !important;
+}
+
+.card-custom figure {
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.card-custom figure img {
+	-moz-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.card-custom figure:hover img {
+	-moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.icon-see-all-courses {
+	vertical-align: middle;
+	margin-left: 15px;
+}
+
+.has-line-through {
+	text-decoration: line-through !important;
+}
+
+footer {
+	background-color: #121921 !important;
+	color: rgba(255,255,255,.7);
+	font-size: .875rem !important;
+}
+
+footer .newsletter-footer input[type=email] {
+	border: 0;
+	border-radius: 0;
+	padding-left: 15px;
+	background-color: #1b2632;
+	color: #fff;
+	font-size: .875rem;
+	height: 36px;
+}
+
+footer .newsletter-footer .button {
+	font-size: .8125rem;
+	height: 36px;
+	font-weight: 600;
+	padding: 0 12px;
+	border-radius: 0 3px 3px 0;
+	transition: all .3s ease-in-out;
+}
+
+footer .newsletter-footer input[type=email]::placeholder {
+	color: #fff !important;
+}
+footer .newsletter-footer input[type=email]::-webkit-input-placeholder {
+	color: #fff !important;
+}
+footer .newsletter-footer input[type=email]::-moz-placeholder {
+	color: #fff !important;
+}
+footer .newsletter-footer input[type=email]::-ms-placeholder {
+	color: #fff !important;
+}
+
+footer ul.menu-footer li {
+	margin-bottom: 10px;
+	width: 33.3333%;
+	float: left;
+}
+
+footer .social-footer a {
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+
+
