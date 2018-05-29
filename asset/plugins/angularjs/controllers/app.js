@@ -32,15 +32,29 @@ app.controller('detailCourse',function($scope, $http){
 })
 
 app.controller('loginController',function($scope){
+
+    surel = false;
+    sandi = false;
     $scope.submitNotif = true;
+
+    cek = function(){
+        if(surel && sandi){
+            $scope.submitNotif = false;
+        }
+    }
+
+    email.value = ''
     $scope.validateEmail = function(){
         if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{1,2})+$/.test(email.value)){
             $scope.cssEmail = "";
+            surel = true;
         }else{
             $scope.cssEmail = "is-danger";
+            surel = false;
         }
+        cek()
     }
-    $scope.passwordNotif = false;
+
     $scope.password = '';
     $scope.$watch('password', function(passwordValue){
         if(passwordValue == undefined){
@@ -48,16 +62,16 @@ app.controller('loginController',function($scope){
         }
         if(passwordValue.length > 6 || passwordValue == ''){
             $scope.cssPassword = "";
-            $scope.passwordNotif = false;
+            if(passwordValue.length > 6){
+                sandi = true;
+            }
         } else {
             $scope.cssPassword = "is-danger";
-            $scope.passwordNotif = true;
+            sandi = false;
         }
+        cek()
      });
 
-    document.addEventListener('change',function(){
-        console.log("change")
-    })
 })
 
 app.controller('indexController',function($scope, $http){
