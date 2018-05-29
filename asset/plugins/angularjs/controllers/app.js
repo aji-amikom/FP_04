@@ -1,4 +1,4 @@
-var uri = "db.json";
+var uri = "https://www.mocky.io/v2/5b0cfecc3300005200b40145";
 
 var app = angular.module("RootApp", []);
 
@@ -32,6 +32,7 @@ app.controller('detailCourse',function($scope, $http){
 })
 
 app.controller('loginController',function($scope){
+    $scope.submitNotif = true;
     $scope.validateEmail = function(){
         if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{1,2})+$/.test(email.value)){
             $scope.cssEmail = "";
@@ -39,6 +40,21 @@ app.controller('loginController',function($scope){
             $scope.cssEmail = "is-danger";
         }
     }
+    $scope.passwordNotif = false;
+    $scope.password = '';
+    $scope.$watch('password', function(passwordValue){
+        if(passwordValue == undefined){
+            return;
+        }
+        if(passwordValue.length > 6 || passwordValue == ''){
+            $scope.cssPassword = "";
+            $scope.passwordNotif = false;
+        } else {
+            $scope.cssPassword = "is-danger";
+            $scope.passwordNotif = true;
+        }
+     });
+
     document.addEventListener('change',function(){
         console.log("change")
     })
