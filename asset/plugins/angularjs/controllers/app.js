@@ -1,3 +1,5 @@
+var uri = "db.json";
+
 var app = angular.module("RootApp", []);
 
 if(localStorage.getItem("id") == null){
@@ -7,7 +9,7 @@ if(localStorage.getItem("id") == null){
 app.controller('detailCourse',function($scope, $http){
     $scope.videoNow = 0;
     $scope.minVal = true;
-    $http.get("db.json")
+    $http.get(uri)
     .then(function(response) {
         id = localStorage.getItem("id") == null ? 0 : localStorage.getItem("id");
 
@@ -42,3 +44,16 @@ app.controller('loginController',function($scope){
     })
 })
 
+app.controller('indexController',function($scope, $http){
+    $http.get(uri)
+    .then(function(response) {
+        $scope.courses = response.data.courses;
+    });
+    $scope.query = function(course){
+        if(course.popular == false){
+            return false;
+        }else{
+            return true;
+        }
+    }
+})

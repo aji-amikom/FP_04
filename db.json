@@ -35,6 +35,356 @@
           "picture": "https://bulma.io/images/placeholders/128x128.png",
           "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
         }
+      },{ 
+        "name": "AngularJS Web",
+        "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "category" : "enginering",
+        "popular" : false,
+        "rating" : {
+          "totalPoint":"4.7"
+        },
+        "materials": {
+          "0":{
+            "name" : "AngularJS Intro",
+            "video" : "MhQKe-aERsU"
+          },
+          "1" : {
+            "name" : "AngularJS Modules",
+            "video" : "C3e_NZIFfrk"
+          },
+          "2" : {
+            "name" : "AngularJS Controller",
+            "video" : "5nI2i84hZP0"
+          },
+          "3" : {
+            "name" : "AngularJS View",
+            "video" : "pez6ferJlxs"
+          },
+          "4" : {
+            "name" : "AngularJS Data Binding",
+            "video" : "zQ9Wtz6QVv4"
+          }
+        },
+        "author": {
+          "name" : "Budi Raharjo",
+          "picture": "https://bulma.io/images/placeholders/128x128.png",
+          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
+        }
+      },{ 
+        "name": "AngularJS Desktop",
+        "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "category" : "enginering",
+        "popular" : true,
+        "rating" : {
+          "totalPoint":"4.7"
+        },
+        "materials": {
+          "0":{
+            "name" : "AngularJS Intro",
+            "video" : "MhQKe-aERsU"
+          },
+          "1" : {
+            "name" : "AngularJS Modules",
+            "video" : "C3e_NZIFfrk"
+          },
+          "2" : {
+            "name" : "AngularJS Controller",
+            "video" : "5nI2i84hZP0"
+          },
+          "3" : {
+            "name" : "AngularJS View",
+            "video" : "pez6ferJlxs"
+          },
+          "4" : {
+            "name" : "AngularJS Data Binding",
+            "video" : "zQ9Wtz6QVv4"
+          }
+        },
+        "author": {
+          "name" : "Budi Raharjo",
+          "picture": "https://bulma.io/images/placeholders/128x128.png",
+          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
+        }
+      },{ 
+        "name": "AngularJS Mobile",
+        "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "category" : "enginering",
+        "popular" : true,
+        "rating" : {
+          "totalPoint":"4.7"
+        },
+        "materials": {
+          "0":{
+            "name" : "AngularJS Intro",
+            "video" : "MhQKe-aERsU"
+          },
+          "1" : {
+            "name" : "AngularJS Modules",
+            "video" : "C3e_NZIFfrk"
+          },
+          "2" : {
+            "name" : "AngularJS Controller",
+            "video" : "5nI2i84hZP0"
+          },
+          "3" : {
+            "name" : "AngularJS View",
+            "video" : "pez6ferJlxs"
+          },
+          "4" : {
+            "name" : "AngularJS Data Binding",
+            "video" : "zQ9Wtz6QVv4"
+          }
+        },
+        "author": {
+          "name" : "Budi Raharjo",
+          "picture": "https://bulma.io/images/placeholders/128x128.png",
+          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
+        }
+      },{ 
+        "name": "VueJS",
+        "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "category" : "enginering",
+        "popular" : true,
+        "rating" : {
+          "totalPoint":"4.7"
+        },
+        "materials": {
+          "0":{
+            "name" : "AngularJS Intro",
+            "video" : "MhQKe-aERsU"
+          },
+          "1" : {
+            "name" : "AngularJS Modules",
+            "video" : "C3e_NZIFfrk"
+          },
+          "2" : {
+            "name" : "AngularJS Controller",
+            "video" : "5nI2i84hZP0"
+          },
+          "3" : {
+            "name" : "AngularJS View",
+            "video" : "pez6ferJlxs"
+          },
+          "4" : {
+            "name" : "AngularJS Data Binding",
+            "video" : "zQ9Wtz6QVv4"
+          }
+        },
+        "author": {
+          "name" : "Budi Raharjo",
+          "picture": "https://bulma.io/images/placeholders/128x128.png",
+          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
+        }
+      },{ 
+        "name": "JQuery",
+        "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "category" : "enginering",
+        "popular" : true,
+        "rating" : {
+          "totalPoint":"4.7"
+        },
+        "materials": {
+          "0":{
+            "name" : "AngularJS Intro",
+            "video" : "MhQKe-aERsU"
+          },
+          "1" : {
+            "name" : "AngularJS Modules",
+            "video" : "C3e_NZIFfrk"
+          },
+          "2" : {
+            "name" : "AngularJS Controller",
+            "video" : "5nI2i84hZP0"
+          },
+          "3" : {
+            "name" : "AngularJS View",
+            "video" : "pez6ferJlxs"
+          },
+          "4" : {
+            "name" : "AngularJS Data Binding",
+            "video" : "zQ9Wtz6QVv4"
+          }
+        },
+        "author": {
+          "name" : "Budi Raharjo",
+          "picture": "https://bulma.io/images/placeholders/128x128.png",
+          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
+        }
+      },{ 
+        "name": "Material Framework",
+        "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "category" : "enginering",
+        "popular" : true,
+        "rating" : {
+          "totalPoint":"4.7"
+        },
+        "materials": {
+          "0":{
+            "name" : "AngularJS Intro",
+            "video" : "MhQKe-aERsU"
+          },
+          "1" : {
+            "name" : "AngularJS Modules",
+            "video" : "C3e_NZIFfrk"
+          },
+          "2" : {
+            "name" : "AngularJS Controller",
+            "video" : "5nI2i84hZP0"
+          },
+          "3" : {
+            "name" : "AngularJS View",
+            "video" : "pez6ferJlxs"
+          },
+          "4" : {
+            "name" : "AngularJS Data Binding",
+            "video" : "zQ9Wtz6QVv4"
+          }
+        },
+        "author": {
+          "name" : "Budi Raharjo",
+          "picture": "https://bulma.io/images/placeholders/128x128.png",
+          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
+        }
+      },{ 
+        "name": "Matematich",
+        "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "category" : "enginering",
+        "popular" : false,
+        "rating" : {
+          "totalPoint":"4.7"
+        },
+        "materials": {
+          "0":{
+            "name" : "AngularJS Intro",
+            "video" : "MhQKe-aERsU"
+          },
+          "1" : {
+            "name" : "AngularJS Modules",
+            "video" : "C3e_NZIFfrk"
+          },
+          "2" : {
+            "name" : "AngularJS Controller",
+            "video" : "5nI2i84hZP0"
+          },
+          "3" : {
+            "name" : "AngularJS View",
+            "video" : "pez6ferJlxs"
+          },
+          "4" : {
+            "name" : "AngularJS Data Binding",
+            "video" : "zQ9Wtz6QVv4"
+          }
+        },
+        "author": {
+          "name" : "Budi Raharjo",
+          "picture": "https://bulma.io/images/placeholders/128x128.png",
+          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
+        }
+      },{ 
+        "name": "Google Map Api",
+        "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "category" : "enginering",
+        "popular" : false,
+        "rating" : {
+          "totalPoint":"4.7"
+        },
+        "materials": {
+          "0":{
+            "name" : "AngularJS Intro",
+            "video" : "MhQKe-aERsU"
+          },
+          "1" : {
+            "name" : "AngularJS Modules",
+            "video" : "C3e_NZIFfrk"
+          },
+          "2" : {
+            "name" : "AngularJS Controller",
+            "video" : "5nI2i84hZP0"
+          },
+          "3" : {
+            "name" : "AngularJS View",
+            "video" : "pez6ferJlxs"
+          },
+          "4" : {
+            "name" : "AngularJS Data Binding",
+            "video" : "zQ9Wtz6QVv4"
+          }
+        },
+        "author": {
+          "name" : "Budi Raharjo",
+          "picture": "https://bulma.io/images/placeholders/128x128.png",
+          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
+        }
+      },{ 
+        "name": "Sains",
+        "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "category" : "enginering",
+        "popular" : false,
+        "rating" : {
+          "totalPoint":"4.7"
+        },
+        "materials": {
+          "0":{
+            "name" : "AngularJS Intro",
+            "video" : "MhQKe-aERsU"
+          },
+          "1" : {
+            "name" : "AngularJS Modules",
+            "video" : "C3e_NZIFfrk"
+          },
+          "2" : {
+            "name" : "AngularJS Controller",
+            "video" : "5nI2i84hZP0"
+          },
+          "3" : {
+            "name" : "AngularJS View",
+            "video" : "pez6ferJlxs"
+          },
+          "4" : {
+            "name" : "AngularJS Data Binding",
+            "video" : "zQ9Wtz6QVv4"
+          }
+        },
+        "author": {
+          "name" : "Budi Raharjo",
+          "picture": "https://bulma.io/images/placeholders/128x128.png",
+          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
+        }
+      },{ 
+        "name": "Anak Ayam",
+        "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "category" : "enginering",
+        "popular" : false,
+        "rating" : {
+          "totalPoint":"4.7"
+        },
+        "materials": {
+          "0":{
+            "name" : "AngularJS Intro",
+            "video" : "MhQKe-aERsU"
+          },
+          "1" : {
+            "name" : "AngularJS Modules",
+            "video" : "C3e_NZIFfrk"
+          },
+          "2" : {
+            "name" : "AngularJS Controller",
+            "video" : "5nI2i84hZP0"
+          },
+          "3" : {
+            "name" : "AngularJS View",
+            "video" : "pez6ferJlxs"
+          },
+          "4" : {
+            "name" : "AngularJS Data Binding",
+            "video" : "zQ9Wtz6QVv4"
+          }
+        },
+        "author": {
+          "name" : "Budi Raharjo",
+          "picture": "https://bulma.io/images/placeholders/128x128.png",
+          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
+        }
       }
     ]
 } 
