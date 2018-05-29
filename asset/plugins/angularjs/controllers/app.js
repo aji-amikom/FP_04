@@ -73,3 +73,10 @@ app.controller('indexController',function($scope, $http){
         }
     }
 })
+
+app.controller('courseController',function($scope, $http){
+    $http.get(uri)
+    .then(function(response) {
+        $scope.courses = response.data.courses;
+    });
+})
