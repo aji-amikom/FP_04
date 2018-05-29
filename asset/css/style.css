@@ -110,6 +110,15 @@ footer ul.menu-footer li {
 	float: left;
 }
 
+footer ul.menu-footer li a {
+	color: rgba(255,255,255,.7);
+}
+
+footer ul.menu-footer li a:hover {
+	color: #3f9fff;
+	opacity: 1;
+}
+
 footer .social-footer a {
 	margin-right: 10px;
 	font-size: 20px;
