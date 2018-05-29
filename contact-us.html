@@ -151,6 +151,10 @@
   </div>
 </section>
 
+<div class="container is-fullhd">
+	<div id="map"></div>
+</div>
+
 <footer class="footer is-purple-deep mtl">
   <div class="container ptl mbl">
   	<div class="columns">
@@ -213,5 +217,19 @@
 
 <script type="text/javascript" src="asset/js/jquery-3.0.0.min.js"></script>
 <script type="text/javascript" src="asset/js/main.js"></script>
+<script>
+  function initMap() {
+    var uluru = {lat: -7.759510, lng: 110.408844};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 18,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBLLwbBP2Z3xTbMuTTJqHOF90OoRwwC7m0&callback=initMap"></script>
 </body>
 </html>

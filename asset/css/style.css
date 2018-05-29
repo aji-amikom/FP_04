@@ -176,6 +176,11 @@ footer .social-footer a {
 	margin-top: 20px;
 }
 
+#map {
+	height: 400px;
+  width: 100%;
+}
+
 /* Dashboard Teacher */
 .line-nav {
 	background-color: #EEE;
