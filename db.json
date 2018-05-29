@@ -3,6 +3,7 @@
       { 
         "name": "AngularJS",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
         "category" : "enginering",
         "popular" : true,
         "rating" : {
@@ -38,6 +39,7 @@
       },{ 
         "name": "AngularJS Web",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
         "category" : "enginering",
         "popular" : false,
         "rating" : {
@@ -73,8 +75,9 @@
       },{ 
         "name": "AngularJS Desktop",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
         "category" : "enginering",
-        "popular" : true,
+        "popular" : false,
         "rating" : {
           "totalPoint":"4.7"
         },
@@ -108,6 +111,7 @@
       },{ 
         "name": "AngularJS Mobile",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
         "category" : "enginering",
         "popular" : true,
         "rating" : {
@@ -143,6 +147,7 @@
       },{ 
         "name": "VueJS",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
         "category" : "enginering",
         "popular" : true,
         "rating" : {
@@ -178,6 +183,7 @@
       },{ 
         "name": "JQuery",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
         "category" : "enginering",
         "popular" : true,
         "rating" : {
@@ -213,6 +219,7 @@
       },{ 
         "name": "Material Framework",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
         "category" : "enginering",
         "popular" : true,
         "rating" : {
@@ -248,6 +255,7 @@
       },{ 
         "name": "Matematich",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
         "category" : "enginering",
         "popular" : false,
         "rating" : {
@@ -283,6 +291,7 @@
       },{ 
         "name": "Google Map Api",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
         "category" : "enginering",
         "popular" : false,
         "rating" : {
@@ -318,6 +327,7 @@
       },{ 
         "name": "Sains",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
         "category" : "enginering",
         "popular" : false,
         "rating" : {
@@ -353,10 +363,11 @@
       },{ 
         "name": "Anak Ayam",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
-        "category" : "enginering",
-        "popular" : false,
+        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
+        "category" : "IPU",
+        "popular" : true,
         "rating" : {
-          "totalPoint":"4.7"
+          "totalPoint":"3.7"
         },
         "materials": {
           "0":{
