@@ -23,15 +23,11 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
-// window.onscroll = function() {
-//   console.log(window.pageYOffset);
-// };
+
 $(window).scroll(function(){
   if ($(window).scrollTop() > 0) {
-    $('nav.navbar').addClass('sticky');
-    // $('nav').removeClass('is-transparent');
-    // $('nav').addClass('is-primary');
+    $('nav.navbar.animate-navbar').addClass('sticky');
   } else {
-    $('nav.navbar').removeClass('sticky');
+    $('nav.navbar.animate-navbar').removeClass('sticky');
   }
 });
