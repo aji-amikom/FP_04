@@ -1,4 +1,4 @@
-var uri = "http://www.mocky.io/v2/5b0cfecc3300005200b40145";
+var uri = "https://www.mocky.io/v2/5b0cfecc3300005200b40145";
 
 var app = angular.module("RootApp", []);
 
