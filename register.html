@@ -12,7 +12,8 @@
 
     <!-- app -->
     <link rel="stylesheet" href="asset/css/common.css">
-
+    <link rel="stylesheet" href="asset/css/style.css">
+    
     <!-- bulma -->
     <link rel="stylesheet" href="asset/css/bulma.css">
     <script defer src="asset/js/all.js"></script>
@@ -20,6 +21,7 @@
     <!-- spacing -->
     <link rel="stylesheet" href="asset/plugins/css-spacing/css-spacing.css">
     
+	
     <title>E-Learning | Register</title>
 </head>
 
@@ -30,17 +32,16 @@
 <div class="container">
     <div class="columns is-centered is-marginless">
         <div class="column is-9">
-            <div class="columns is-mobile">
+            <div class="columns">
                 <div class="column is-half is-offset-one-quarter">
-                    <div class="tabs is-centered is-large is-fullwidth">
+                    <div class="tabs is-centered is-large is-fullwidth mtxl">
                         <ul>
                             <li class="is-active" id="student-tab"><a>Student</a></li>
                             <li id="teacher-tab"><a>Teacher</a></li>
                         </ul>
                     </div>
                     <div class="box">
-                        <article class="media">
-                            <div class="media-content" id="student-login">
+                            <div id="student-login">
                                 <p class="title is-4">
                                     Create your student account
                                 </p>
@@ -98,7 +99,7 @@
                                 </div>
                             </div>
 
-                            <div class="media-content" id="teacher-login">
+                            <div id="teacher-login">
                                     <p class="title is-4">
                                         Create your teacher account
                                     </p>
@@ -152,7 +153,6 @@
                                         <a href="" class="button is-danger is-narrow">Google</a>
                                     </div>
                                 </div>
-                        </article>
                     </div>
                     <div class="columns is-centered is-marginless">
                         <div class="column is-narrow">
@@ -173,7 +173,6 @@
 
 <!-- ng-main-controller -->
 <script src="asset/plugins/angularjs/controllers/app.js"></script>
-<!-- <script src="asset/plugins/angularjs/controllers/componen.js"></script> -->
 
 </body>
 </html>
