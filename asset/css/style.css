@@ -1,3 +1,5 @@
+/* Navbar */
+
 nav.navbar.sticky {
 	z-index: 1;
 	top: 0;
@@ -82,6 +84,8 @@ span.hr-purple em {
 	text-decoration: line-through !important;
 }
 
+/* Footer */
+
 footer {
 	background-color: #121921 !important;
 	color: rgba(255,255,255,.7);
@@ -140,6 +144,8 @@ footer .social-footer a {
 	font-size: 20px;
 }
 
+/* Contact Us */
+
 .contact-us-form .input, .contact-us-form .textarea {
 	box-shadow: none;
 }
@@ -168,4 +174,22 @@ footer .social-footer a {
 .contact-address .single-address .text {
 	padding-left: 26px;
 	margin-top: 20px;
+}
+
+/* Dashboard Teacher */
+.line-nav {
+	background-color: #EEE;
+}
+
+.line-nav .navbar-item a {
+	color: #999 !important;
+	font-weight: 500;
+}
+
+.line-nav .navbar-item a:hover {
+	color: #b3b3b3 !important;
+}
+
+.teacher-box {
+	font-size: .875rem;
 }
