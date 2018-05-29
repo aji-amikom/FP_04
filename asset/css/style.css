@@ -190,6 +190,29 @@ footer .social-footer a {
 	color: #b3b3b3 !important;
 }
 
+.line-nav .navbar-item.active {
+	background: url(../../asset/img/border-tab.png) bottom center repeat-x;
+}
+
+.line-nav .navbar-item.active a {
+	color: #635d5d !important;
+}
+
 .teacher-box {
 	font-size: .875rem;
+}
+
+.box.box-latest-comments {
+	box-shadow: 1px 1px 2px 0 rgba(0,0,0,.1);
+	-moz-box-shadow: 1px 1px 2px 0 rgba(0,0,0,.1);
+	font-size: .875rem;
+}
+
+.navbar-item.has-dropdown-custom:hover .navbar-link {
+	background: none !important;
+}
+.navbar-link::after {
+	border: 1px solid #ffffff;
+	border-right: 0;
+	border-top: 0;
 }
