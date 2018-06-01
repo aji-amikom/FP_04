@@ -2,13 +2,13 @@ var uri = "db.json";
 
 var app = angular.module("RootApp", []);
 
-//if(localStorage.getItem("id") == null){
+if(localStorage.getItem("id") == null){
     mathId = Math.floor(Math.random() * 10);
     if(mathId <= 0){
         mathId = 1;
     }
     localStorage.setItem("id", mathId);
-//}
+}
     
 app.controller('detailCourse',function($scope, $http){
     $scope.videoNow = 0;
@@ -97,4 +97,9 @@ app.controller('courseController',function($scope, $http){
     .then(function(response) {
         $scope.courses = response.data.courses;
     });
+
+    $scope.courseClick = function(){
+        id = $(this).attr("data-id");
+        console.log(id);
+    }
 })
