@@ -17,18 +17,18 @@
 <body ng-controller="courseController">
 
 <!-- Header -->
-<section class="hero is-medium is-primary is-bold">
+<section class="hero hero-banner">
 	<div class="hero-head">
-		<nav class="navbar pvs is-fixed-top sticky">
+		<nav class="navbar animate-navbar pvs is-fixed-top">
 			<div class="container">
 				<div class="navbar-brand">
-					<a class="navbar-item" href="../index.html">
+					<a class="navbar-item" href="index.html">
 						<img src="asset/img/logo/logo.png" alt="Logo">
 					</a>
 					<span class="navbar-burger burger" data-target="navbarMenu">
 						<span></span>
 						<span></span>
-						<span></span>
+						<span></span>	
 					</span>
 				</div>
 				<div id="navbarMenu" class="navbar-menu">
@@ -53,43 +53,22 @@
 								<span>CONTACT</span>
 							</a>
 						</span>
-						<div class="navbar-item has-dropdown has-dropdown-custom is-hoverable">
-					    <a class="navbar-link">
-					      <p class="image is-32x32">
-									<img class="is-rounded" src="fotoharish.jpg">
-								</p>
-					    </a>
-
-					    <div class="navbar-dropdown navbar-dropdown-custom">
-					      <a class="navbar-item" href="#">
-					        Dashboard
-					      </a>
-					      <a class="navbar-item" href="#">
-					        My Courses
-					      </a>
-					      <a class="navbar-item" href="#">
-					        Messages
-					      </a>
-					      <a class="navbar-item" href="#">
-					        Profile
-					      </a>
-					      <a class="navbar-item" href="#">
-					        Logout
-					      </a>
-					    </div>
-					  </div>
+						<span class="navbar-item">
+							<a class="button is-warning is-rounded has-text-weight-semibold" href="login.html">
+								<span>LOGIN</span>
+							</a>
+						</span>
 					</div>
 				</div>
 			</div>
 		</nav>
 	</div>
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title has-text-centered">
-        COURSE
-      </h1>
-    </div>
-  </div>
+
+	<div class="hero-body mtl">
+		<div class="container has-text-centered">
+			<h3 class="is-size-2 is-uppercase has-text-weight-bold has-text-white">COURSE</h3>
+		</div>
+	</div>
 </section>
 <!-- Content -->
 <div class="container">
@@ -123,7 +102,7 @@
 
 			</div>
 			<div class="column">
-				<div class="dropdown is-hoverable ptl plxl ">
+				<div class="dropdown is-hoverable mtl mlxl ">
 				  <div class="dropdown-trigger">
 				    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
 				      <span>Category</span>
@@ -132,34 +111,24 @@
 				      </span>
 				    </button>
 				  </div>
-				  <div class="dropdown-menu plxl" id="dropdown-menu3" role="menu">
+				  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
 				    <div class="dropdown-content">
-				      <a href="#" class="dropdown-item">
-				        Technology
-				      </a>
-				      <a href="#" class="dropdown-item">
-				        Mathematics
-				      </a>
-				      <a href="#" class="dropdown-item">
-				        Science
-				      </a>
 				      <a href="#" class="dropdown-item">
 				        Programming
 				      </a>
 				      <a href="#" class="dropdown-item">
-				        General
+				        School Lesson
 				      </a>
 				      <a href="#" class="dropdown-item">
-				        Sport
+				        College Lesson
 				      </a>
-				      <hr class="dropdown-divider">
 				      <a href="#" class="dropdown-item">
-				        More
+				        Literature
 				      </a>
 				    </div>
 				  </div>
 				</div>
-				<div class="dropdown is-hoverable ptl plm">
+				<div class="dropdown is-hoverable mtl mlm">
 				  <div class="dropdown-trigger">
 				    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
 				      <span>Type</span>
@@ -168,7 +137,7 @@
 				      </span>
 				    </button>
 				  </div>
-				  <div class="dropdown-menu plm" id="dropdown-menu3" role="menu">
+				  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
 				    <div class="dropdown-content">
 				      <a href="#" class="dropdown-item">
 				        PDF
