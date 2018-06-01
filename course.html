@@ -162,10 +162,10 @@
 				 <div class="columns is-multiline mtl">
 
 					<div ng-repeat="course in courses" class="column is-4">
-							<div class="card card-custom">
+							<div class="card card-custom" data-ng-click="courseClick(course, courses)">
 								<div class="card-image">
 									<figure class="image is-4by3">
-										<img src="{{ course.picture }}" alt="Placeholder image">
+										<img ng-src="{{ course.picture }}" alt="Placeholder image">
 									</figure>
 								</div>
 								<div class="card-content">

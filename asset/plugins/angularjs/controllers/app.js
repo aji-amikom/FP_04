@@ -104,6 +104,11 @@ app.controller('courseController',function($scope, $http){
         $scope.courses = response.data.courses;
     });
 
+    $scope.courseClick = function(course, courses){
+        id = courses.indexOf(course);
+        localStorage.setItem("id", id);
+        window.location = 'course-detail.html';
+    }
 })
 
 app.controller('teacherController',function($scope, $http){
