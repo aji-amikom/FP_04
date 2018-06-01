@@ -1,10 +1,14 @@
-var uri = "https://www.mocky.io/v2/5b0cfecc3300005200b40145";
+var uri = "db.json";
 
 var app = angular.module("RootApp", []);
 
-if(localStorage.getItem("id") == null){
-    localStorage.setItem("id", 0);
-}
+//if(localStorage.getItem("id") == null){
+    mathId = Math.floor(Math.random() * 10);
+    if(mathId <= 0){
+        mathId = 1;
+    }
+    localStorage.setItem("id", mathId);
+//}
     
 app.controller('detailCourse',function($scope, $http){
     $scope.videoNow = 0;
