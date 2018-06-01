@@ -67,7 +67,7 @@
                                     </div>
                                     <div class="field">
                                         <p class="control has-icons-left">
-                                            <input class="input {{ cssPassword }}" type="password" ng-model="password" placeholder="Password" id="password" required>
+                                            <input class="input {{ cssPassword }}" type="password" ng-model="password" placeholder="Password" id="password" minlength="6" required>
                                             <span class="icon is-small is-left">
                                             <i class="fas fa-lock"></i>
                                             </span>
@@ -83,7 +83,7 @@
                                     </div>
                                     <div class="field">
                                         <p class="control">
-                                            <input type="submit" value="Sign In" class="button is-success login-button" ng-disabled="submitNotif">
+                                            <input type="submit" value="Sign In" class="button is-success login-button">
                                         </p>
                                     </div>
                                 </form>
