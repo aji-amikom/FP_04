@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Hello Bulma!</title>
+	<title>Courses | Udemam</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="asset/css/bulma.css">
 	<link rel="stylesheet" href="asset/plugins/fontawesome/css/fontawesome-all.min.css">
@@ -162,10 +162,10 @@
 				 <div class="columns is-multiline mtl">
 
 					<div ng-repeat="course in courses" class="column is-4">
-							<div class="card card-custom">
+							<div class="card card-custom" data-ng-click="courseClick(course, courses)">
 								<div class="card-image">
 									<figure class="image is-4by3">
-										<img src="{{ course.picture }}" alt="Placeholder image">
+										<img ng-src="{{ course.picture }}" alt="Placeholder image">
 									</figure>
 								</div>
 								<div class="card-content">

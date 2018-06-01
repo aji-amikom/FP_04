@@ -5,34 +5,35 @@
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
         "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
         "category" : "Programming",
-        "popular" : false,
+        "popular" : true,
+        "hasTeacher": true,
         "rating" : {
           "totalPoint":"4.7"
         },
         "materials": {
           "0":{
             "name" : "How to program in C# - Basic",
-            "video" : "pSiIHe2uZ2w&list=PLPV2KyIb3jR6ZkG8gZwJYSjnXxmfPAl51"
+            "video" : "pSiIHe2uZ2w"
           },
           "1" : {
             "name" : "How to program in C# - Beginner",
-            "video" : "nA2pSmBmvKg&list=PLPV2KyIb3jR6ZkG8gZwJYSjnXxmfPAl51&index=2"
+            "video" : "nA2pSmBmvKg"
           },
           "2" : {
             "name" : "How to program in C# - Variable",
-            "video" : "udoMi4mGYYw&list=PLPV2KyIb3jR6ZkG8gZwJYSjnXxmfPAl51&index=3"
+            "video" : "udoMi4mGYYw"
           },
           "3" : {
             "name" : "How to program in C# - IF STATEMENT",
-            "video" : "OXTK7cnphYY&index=4&list=PLPV2KyIb3jR6ZkG8gZwJYSjnXxmfPAl51"
+            "video" : "OXTK7cnphYY"
           },
           "4" : {
             "name" : "How to program in C# - SWITCH STATEMENT",
-            "video" : "Qs-LAYkp9YU&list=PLPV2KyIb3jR6ZkG8gZwJYSjnXxmfPAl51&index=5"
+            "video" : "Qs-LAYkp9YU"
           }
         },
         "author": {
-          "name" : "Brackeys",
+          "name" : "Maful P",
           "picture": "https://bulma.io/images/placeholders/128x128.png",
           "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
         }
@@ -41,30 +42,31 @@
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
         "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
         "category" : "School Lesson",
-        "popular" : false,
+        "popular" : true,
+        "hasTeacher": true,
         "rating" : {
           "totalPoint":"4.7"
         },
         "materials": {
           "0":{
             "name" : "TRIGONOMETRY IDENTITIES !! LESSON 1 !!",
-            "video" : "kqlLfBxPcUo&list=PLOoogDtEDyvs5pbg4bNxg4onA6fzvUc55"
+            "video" : "kqlLfBxPcUo"
           },
           "1" : {
             "name" : "TRIGONOMETRY IDENTITIES !! LESSON 2 !!",
-            "video" : "Wkil_7WTToY&index=2&list=PLOoogDtEDyvs5pbg4bNxg4onA6fzvUc55"
+            "video" : "Wkil_7WTToY"
           },
           "2" : {
             "name" : "TRIGONOMETRY Based on COT/TAN Rule !! LESSON 3 !!",
-            "video" : "HzvD5C2NTU0&index=3&list=PLOoogDtEDyvs5pbg4bNxg4onA6fzvUc55"
+            "video" : "HzvD5C2NTU0"
           },
           "3" : {
             "name" : "TRIGONOMETRY Find Value of Theta !! LESSON 4 !!",
-            "video" : "pZEYLqItqOY&index=4&list=PLOoogDtEDyvs5pbg4bNxg4onA6fzvUc55"
-          },
+            "video" : "pZEYLqItqOY"
+          }
         },
         "author": {
-          "name" : "Aji Kamaludin",
+          "name" : "Maful P",
           "picture": "https://bulma.io/images/placeholders/128x128.png",
           "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
         }
@@ -73,34 +75,35 @@
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
         "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
         "category" : "School Lesson",
-        "popular" : false,
+        "popular" : true,
+        "hasTeacher": true,
         "rating" : {
           "totalPoint":"4.7"
         },
         "materials": {
           "0":{
             "name" : "Motion in a Straight Line: Crash Course Physics #1",
-            "video" : "ZM8ECpBuQYE&list=PL8dPuuaLjXtN0ge7yDk_UA0ldZJdhwkoV"
+            "video" : "ZM8ECpBuQYE"
           },
           "1" : {
             "name" : "Derivatives: Crash Course Physics #2",
-            "video" : "ObHJJYvu3RE&list=PL8dPuuaLjXtN0ge7yDk_UA0ldZJdhwkoV&index=2"
+            "video" : "ObHJJYvu3RE"
           },
           "2" : {
             "name" : "Integrals: Crash Course Physics #3",
-            "video" : "jLJLXka2wEM&index=3&list=PL8dPuuaLjXtN0ge7yDk_UA0ldZJdhwkoV"
+            "video" : "jLJLXka2wEM"
           },
           "3" : {
             "name" : "Vectors and 2D Motion: Crash Course Physics #4",
-            "video" : "w3BhzYI6zXU&list=PL8dPuuaLjXtN0ge7yDk_UA0ldZJdhwkoV&index=4"
+            "video" : "w3BhzYI6zXU"
           },
           "4" : {
             "name" : "Newton's Laws: Crash Course Physics #5",
-            "video" : "kKKM8Y-u7ds&index=5&list=PL8dPuuaLjXtN0ge7yDk_UA0ldZJdhwkoV"
+            "video" : "kKKM8Y-u7ds"
           }
         },
         "author": {
-          "name" : "Tukidi",
+          "name" : "Maful P",
           "picture": "https://bulma.io/images/placeholders/128x128.png",
           "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
         }
@@ -110,33 +113,34 @@
         "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
         "category" : "School Lesson",
         "popular" : false,
+        "hasTeacher": true,
         "rating" : {
           "totalPoint":"4.7"
         },
         "materials": {
           "0":{
             "name" : "The Nucleus: Crash Course Chemistry #1",
-            "video" : "FSyAehMdpyI&index=1&list=PL8dPuuaLjXtPHzzYuWy6fYEaX9mQQ8oGr"
+            "video" : "FSyAehMdpyI"
           },
           "1" : {
             "name" : "Unit Conversion & Significant Figures: Crash Course Chemistry #2",
-            "video" : "hQpQ0hxVNTg&index=2&list=PL8dPuuaLjXtPHzzYuWy6fYEaX9mQQ8oGr"
+            "video" : "hQpQ0hxVNTg"
           },
           "2" : {
             "name" : "The Creation of Chemistry - The Fundamental Laws: Crash Course Chemistry #3",
-            "video" : "QiiyvzZBKT8&index=3&list=PL8dPuuaLjXtPHzzYuWy6fYEaX9mQQ8oGr"
+            "video" : "QiiyvzZBKT8"
           },
           "3" : {
             "name" : "The Periodic Table: Crash Course Chemistry #4",
-            "video" : "0RRVV4Diomg&list=PL8dPuuaLjXtPHzzYuWy6fYEaX9mQQ8oGr&index=4"
+            "video" : "0RRVV4Diomg"
           },
           "4" : {
             "name" : "The Electron: Crash Course Chemistry #5",
-            "video" : "rcKilE9CdaA&list=PL8dPuuaLjXtPHzzYuWy6fYEaX9mQQ8oGr&index=5"
+            "video" : "rcKilE9CdaA"
           }
         },
         "author": {
-          "name" : "Brackeys",
+          "name" : "Maful P",
           "picture": "https://bulma.io/images/placeholders/128x128.png",
           "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
         }
@@ -152,23 +156,23 @@
         "materials": {
           "0":{
             "name" : "That's Why Carbon Is A Tramp: Crash Course Biology #1",
-            "video" : "QnQe0xW_JY4&list=PL3EED4C1D684D3ADF"
+            "video" : "QnQe0xW_JY4"
           },
           "1" : {
             "name" : "Water - Liquid Awesome: Crash Course Biology #2",
-            "video" : "HVT3Y3_gHGg&index=2&list=PL3EED4C1D684D3ADF"
+            "video" : "HVT3Y3_gHGg"
           },
           "2" : {
             "name" : "Biological Molecules - You Are What You Eat: Crash Course Biology #3",
-            "video" : "H8WJ2KENlK0&list=PL3EED4C1D684D3ADF&index=3"
+            "video" : "H8WJ2KENlK0"
           },
           "3" : {
             "name" : "Eukaryopolis - The City of Animal Cells: Crash Course Biology #4",
-            "video" : "cj8dDTHGJBY&list=PL3EED4C1D684D3ADF&index=4"
+            "video" : "cj8dDTHGJBY"
           },
           "4" : {
             "name" : "In Da Club - Membranes & Transport: Crash Course Biology #5",
-            "video" : "dPKvHrD1eS4&list=PL3EED4C1D684D3ADF&index=5"
+            "video" : "dPKvHrD1eS4"
           }
         },
         "author": {
@@ -188,23 +192,23 @@
         "materials": {
           "0":{
             "name" : "What Is Statistics: Crash Course Statistics #1",
-            "video" : "sxQaBpKfDRk&list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr&index=2"
+            "video" : "sxQaBpKfDRk"
           },
           "1" : {
             "name" : "Mathematical Thinking: Crash Course Statistics #2",
-            "video" : "tN9Xl1AcSv8&list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr&index=3"
+            "video" : "tN9Xl1AcSv8"
           },
           "2" : {
             "name" : "Mean, Median, and Mode: Measures of Central Tendency: Crash Course Statistics #3",
-            "video" : "kn83BA7cRNM&list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr&index=4"
+            "video" : "kn83BA7cRNM"
           },
           "3" : {
             "name" : "Measures of Spread: Crash Course Statistics #4",
-            "video" : "R4yfNi_8Kqw&index=5&list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr"
+            "video" : "R4yfNi_8Kqw"
           },
           "4" : {
             "name" : "Charts Are Like Pasta - Data Visualization Part 1: Crash Course Statistics #5",
-            "video" : "hEWY6kkBdpo&index=6&list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr"
+            "video" : "hEWY6kkBdpo"
           }
         },
         "author": {
@@ -224,23 +228,23 @@
         "materials": {
           "0":{
             "name" : "What Is Sociology?: Crash Course Sociology #1",
-            "video" : "YnCJU6PaCio&index=2&list=PL8dPuuaLjXtMJ-AfB_7J1538YKWkZAnGA"
+            "video" : "YnCJU6PaCio"
           },
           "1" : {
             "name" : "Major Sociological Paradigms: Crash Course Sociology #2",
-            "video" : "DbTt_ySTjaY&index=3&list=PL8dPuuaLjXtMJ-AfB_7J1538YKWkZAnGA"
+            "video" : "DbTt_ySTjaY"
           },
           "2" : {
             "name" : "Sociology & the Scientific Method: Crash Course Sociology #3",
-            "video" : "ZIwyNIdgJBE&index=4&list=PL8dPuuaLjXtMJ-AfB_7J1538YKWkZAnGA"
+            "video" : "ZIwyNIdgJBE"
           },
           "3" : {
             "name" : "Sociology Research Methods: Crash Course Sociology #4",
-            "video" : "QwhK-iEyXYA&index=5&list=PL8dPuuaLjXtMJ-AfB_7J1538YKWkZAnGA"
+            "video" : "QwhK-iEyXYA"
           },
           "4" : {
             "name" : "Émile Durkheim on Suicide & Society: Crash Course Sociology #5",
-            "video" : "IZfGGF-YYzY&list=PL8dPuuaLjXtMJ-AfB_7J1538YKWkZAnGA&index=6"
+            "video" : "IZfGGF-YYzY"
           }
         },
         "author": {
@@ -260,23 +264,23 @@
         "materials": {
           "0":{
             "name" : "What is jQuery? [#1]",
-            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+            "video" : "46Jz0QJyhN0"
           },
           "1" : {
             "name" : "How to Install jQuery [#2]",
-            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+            "video" : "46Jz0QJyhN0"
           },
           "2" : {
             "name" : "jQuery Syntax [#3]",
-            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+            "video" : "46Jz0QJyhN0"
           },
           "3" : {
             "name" : "jQuery Selectors [#4]",
-            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+            "video" : "46Jz0QJyhN0"
           },
           "4" : {
             "name" : "jQuery Event Methods [#5]",
-            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+            "video" : "46Jz0QJyhN0"
           }
         },
         "author": {
@@ -296,23 +300,23 @@
         "materials": {
           "0":{
             "name" : "Learn English Expressions: JUST IN CASE",
-            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+            "video" : "46Jz0QJyhN0"
           },
           "1" : {
             "name" : "My TOP 5 Writing Tips (for all levels)",
-            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+            "video" : "46Jz0QJyhN0"
           },
           "2" : {
             "name" : "How to pronounce 'OF' like a native English speaker",
-            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+            "video" : "46Jz0QJyhN0"
           },
           "3" : {
             "name" : "How to succeed in your JOB INTERVIEW: Behavioral Questions",
-            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+            "video" : "46Jz0QJyhN0"
           },
           "4" : {
             "name" : "Take the Present Perfect Progressive challenge!",
-            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+            "video" : "46Jz0QJyhN0"
           }
         },
         "author": {
@@ -332,23 +336,23 @@
         "materials": {
           "0":{
             "name" : "Intro to Japanese - The Hiragana Syllabary, Vowels, Pitch Accents, and More",
-            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+            "video" : "46Jz0QJyhN0"
           },
           "1" : {
             "name" : "The Katakana Syllabary",
-            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+            "video" : "46Jz0QJyhN0"
           },
           "2" : {
             "name" : "First Person Pronouns, or, Ways to Say 'I' in Japanese",
-            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+            "video" : "46Jz0QJyhN0"
           },
           "3" : {
             "name" : "Second-Person Pronouns, or, Ways to Say 'You' in Japanese",
-            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+            "video" : "46Jz0QJyhN0"
           },
           "4" : {
             "name" : "Basic Phrases (How-to Greet, Thank, Introduce Yourself and More)",
-            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+            "video" : "46Jz0QJyhN0"
           }
         },
         "author": {

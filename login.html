@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="asset/plugins/css-spacing/css-spacing.css">
     <link rel="shortcut icon" href="asset/img/logo/favicon.png"/>
 
-    <title>E-Learning | Login</title>
+    <title>Login | Udemam</title>
 </head>
 
 <div ng-include="'view/navbar.html'"></div>
@@ -57,7 +57,7 @@
                                     Sign in
                                 </p> 
                                 <hr class="dropdown-divider">  
-                                <form action="." method="post" name="login">
+                                <form action="#" method="post" name="login">
                                     <div class="field">
                                         <p class="control has-icons-left has-icons-right">
                                             <input class="input {{ cssEmail }}" type="email" placeholder="Email" id="email" ng-keypress="validateEmail()" required>
@@ -68,8 +68,7 @@
                                     </div>
                                     <div class="field">
                                         <p class="control has-icons-left">
-                                            <input class="input {{ cssPassword }}" type="password" ng-model="password" placeholder="Password" id="password" required>
-                                            <span ng-show="passwordNotif">Password Invalid</span>
+                                            <input class="input {{ cssPassword }}" type="password" ng-model="password" placeholder="Password" id="password" minlength="6" required>
                                             <span class="icon is-small is-left">
                                             <i class="fas fa-lock"></i>
                                             </span>
@@ -85,7 +84,7 @@
                                     </div>
                                     <div class="field">
                                         <p class="control">
-                                            <input type="submit" value="Sign In" class="button is-success login-button" ng-disabled="submitNotif">
+                                            <input type="submit" value="Sign In" class="button is-success login-button">
                                         </p>
                                     </div>
                                 </form>
