@@ -142,9 +142,8 @@
     </span>
     <div class="columns is-multiline mtl">
 
-				<div ng-repeat="course in courses | filter:query" class="column is-4" ng-click="courseClick()">
-						<a href="#" data-id="{{ $index }}">
-							<div class="card card-custom" ng-click="courseClick()">
+				<div ng-repeat="course in courses | filter:query" class="column is-4">
+							<div class="card card-custom" data-ng-click="courseClick(course, courses)" data-id="{{ courses.indexOf(course) }}">
 								<div class="card-image">
 									<figure class="image is-4by3">
 										<img ng-src="{{ course.picture }}" alt="Placeholder image">
@@ -159,7 +158,6 @@
 									</div>
 								</div>
 							</div>
-						</a>
 					</div>
 
 		</div>

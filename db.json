@@ -6,6 +6,7 @@
         "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
         "category" : "Programming",
         "popular" : true,
+        "hasTeacher": true,
         "rating" : {
           "totalPoint":"4.7"
         },
@@ -32,7 +33,7 @@
           }
         },
         "author": {
-          "name" : "Brackeys",
+          "name" : "Maful P",
           "picture": "https://bulma.io/images/placeholders/128x128.png",
           "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
         }
@@ -42,6 +43,7 @@
         "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
         "category" : "School Lesson",
         "popular" : true,
+        "hasTeacher": true,
         "rating" : {
           "totalPoint":"4.7"
         },
@@ -64,7 +66,7 @@
           }
         },
         "author": {
-          "name" : "Aji Kamaludin",
+          "name" : "Maful P",
           "picture": "https://bulma.io/images/placeholders/128x128.png",
           "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
         }
@@ -74,6 +76,7 @@
         "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
         "category" : "School Lesson",
         "popular" : true,
+        "hasTeacher": true,
         "rating" : {
           "totalPoint":"4.7"
         },
@@ -100,7 +103,7 @@
           }
         },
         "author": {
-          "name" : "Tukidi",
+          "name" : "Maful P",
           "picture": "https://bulma.io/images/placeholders/128x128.png",
           "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
         }
@@ -110,6 +113,7 @@
         "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
         "category" : "School Lesson",
         "popular" : false,
+        "hasTeacher": true,
         "rating" : {
           "totalPoint":"4.7"
         },
@@ -136,7 +140,7 @@
           }
         },
         "author": {
-          "name" : "Brackeys",
+          "name" : "Maful P",
           "picture": "https://bulma.io/images/placeholders/128x128.png",
           "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
         }

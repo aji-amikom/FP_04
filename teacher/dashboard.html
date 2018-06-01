@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="RootApp">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,9 +11,11 @@
 	<link rel="stylesheet" href="../asset/plugins/fontawesome/css/fontawesome-all.min.css">
 	<link rel="stylesheet" href="../asset/plugins/css-spacing/css-spacing.css">
 	<link rel="stylesheet" href="../asset/plugins/bulma-pricingtable/bulma-pricingtable.min.css">
+	<!-- angular -->
+	<script src="../asset/plugins/angularjs/angular.min.js"></script>
 	<link rel="shortcut icon" href="../asset/img/logo/favicon.png"/>
 </head>
-<body>
+<body ng-controller="teacherController">
 <section class="hero">
 	<div class="hero-head">
 		<nav class="navbar pvs is-fixed-top sticky">
@@ -158,81 +160,22 @@
     	<div class="column is-two-thirds has-text-left">
     		<h1 class="is-size-4 is-uppercase has-text-weight-semibold mbm">Latest Courses</h1>
     		<div class="columns is-multiline mtl">
-		    	<div class="column is-6">
-		    		<a href="#">
-			    		<div class="card card-custom">
-							  <div class="card-image">
-							    <figure class="image is-4by3">
-							      <img src="http://www.ansonika.com/udema/img/course__list_1.jpg" alt="Placeholder image">
-							    </figure>
-							  </div>
-							  <div class="card-content">
-							  	<small class="is-uppercase has-text-weight-semibold has-text-grey-light is-size-7">engineering</small>
-							  	<h3 class="is-size-5 has-text-weight-semibold">Computer Vision</h3>
-
-							  	<div class="footer-content mtl is-size-7 has-text-right">
-							  		<i class="fas fa-user-friends has-text-info"></i> 1200 <i class="fas fa-star has-text-warning"></i> 4.5
-							  	</div>
-							  </div>
+		    	<div class="column is-6" ng-repeat="course in courses | filter:query">
+						<div class="card card-custom" data-ng-click="courseClick(course, courses)" data-id="{{ courses.indexOf(course) }}">
+							<div class="card-image">
+								<figure class="image is-4by3">
+									<img ng-src="{{ course.picture }}" alt="Placeholder image">
+								</figure>
 							</div>
-						</a>
-		    	</div>
-		    	<div class="column is-6">
-		    		<a href="#">
-			    		<div class="card card-custom">
-							  <div class="card-image">
-							    <figure class="image is-4by3">
-							      <img src="http://www.ansonika.com/udema/img/course__list_1.jpg" alt="Placeholder image">
-							    </figure>
-							  </div>
-							  <div class="card-content">
-							  	<small class="is-uppercase has-text-weight-semibold has-text-grey-light is-size-7">engineering</small>
-							  	<h3 class="is-size-5 has-text-weight-semibold">Computer Vision</h3>
-
-							  	<div class="footer-content mtl is-size-7 has-text-right">
-							  		<i class="fas fa-user-friends has-text-info"></i> 1200 <i class="fas fa-star has-text-warning"></i> 4.5
-							  	</div>
-							  </div>
+							<div class="card-content">
+								<small class="is-uppercase has-text-weight-semibold has-text-grey-light is-size-7">{{course.category}}</small>
+								<h3 class="is-size-5 has-text-weight-semibold">{{course.name}}</h3>
+				
+								<div class="footer-content mtl is-size-7 has-text-right">
+									<i class="fas fa-user-friends has-text-info"></i> 1200 <i class="fas fa-star has-text-warning"></i> {{ course.rating.totalPoint }}
+								</div>
 							</div>
-						</a>
-		    	</div>
-		    	<div class="column is-6">
-		    		<a href="#">
-			    		<div class="card card-custom">
-							  <div class="card-image">
-							    <figure class="image is-4by3">
-							      <img src="http://www.ansonika.com/udema/img/course__list_1.jpg" alt="Placeholder image">
-							    </figure>
-							  </div>
-							  <div class="card-content">
-							  	<small class="is-uppercase has-text-weight-semibold has-text-grey-light is-size-7">engineering</small>
-							  	<h3 class="is-size-5 has-text-weight-semibold">Computer Vision</h3>
-
-							  	<div class="footer-content mtl is-size-7 has-text-right">
-							  		<i class="fas fa-user-friends has-text-info"></i> 1200 <i class="fas fa-star has-text-warning"></i> 4.5
-							  	</div>
-							  </div>
-							</div>
-						</a>
-		    	</div>
-		    	<div class="column is-6">
-		    		<a href="#">
-			    		<div class="card card-custom">
-							  <div class="card-image">
-							    <figure class="image is-4by3">
-							      <img src="http://www.ansonika.com/udema/img/course__list_1.jpg" alt="Placeholder image">
-							    </figure>
-							  </div>
-							  <div class="card-content">
-							  	<small class="is-uppercase has-text-weight-semibold has-text-grey-light is-size-7">engineering</small>
-							  	<h3 class="is-size-5 has-text-weight-semibold">Computer Vision</h3>
-
-							  	<div class="footer-content mtl is-size-7 has-text-right">
-							  		<i class="fas fa-user-friends has-text-info"></i> 1200 <i class="fas fa-star has-text-warning"></i> 4.5
-							  	</div>
-							  </div>
-							</div>
-						</a>
+						</div>
 		    	</div>
 				</div>
     	</div>
@@ -325,7 +268,7 @@
   	<div class="columns">
 		  <div class="column is-3">
 		  	<p class="mbl">
-		  		<img src="asset/img/logo/logo.png" alt="Logo" width="149" height="42">
+		  		<img src="../asset/img/logo/logo.png" alt="Logo" width="149" height="42">
 		  	</p>
 		  	<p>Abilities or he perfectly pretended so strangers be exquisite. Oh to another chamber pleased imagine do in. Went me rank at last loud shot an draw. Excellent so to no sincerity smallness.</p>
 		  </div>
@@ -382,5 +325,7 @@
 
 <script type="text/javascript" src="../asset/js/jquery-3.0.0.min.js"></script>
 <script type="text/javascript" src="../asset/js/main.js"></script>
+<!-- ng-main-controller -->
+<script src="../asset/plugins/angularjs/controllers/app.js"></script>
 </body>
 </html>

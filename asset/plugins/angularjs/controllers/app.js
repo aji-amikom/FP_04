@@ -1,4 +1,4 @@
-var uri = "db.json";
+var uri = "http://www.mocky.io/v2/5b119dd72f0000740034f406";
 
 var app = angular.module("RootApp", []);
 
@@ -90,6 +90,12 @@ app.controller('indexController',function($scope, $http){
             return true;
         }
     }
+
+    $scope.courseClick = function(course, courses){
+        id = courses.indexOf(course);
+        localStorage.setItem("id", id);
+        window.location = 'course-detail.html';
+    }
 })
 
 app.controller('courseController',function($scope, $http){
@@ -98,8 +104,24 @@ app.controller('courseController',function($scope, $http){
         $scope.courses = response.data.courses;
     });
 
-    $scope.courseClick = function(){
-        id = $(this).attr("data-id");
-        console.log(id);
+})
+
+app.controller('teacherController',function($scope, $http){
+    $http.get(uri)
+    .then(function(response) {
+        $scope.courses = response.data.courses;
+    });
+    $scope.query = function(course){
+        if(course.hasTeacher == false || course.hasTeacher == null || course.hasTeacher == undefined){
+            return false;
+        }else{
+            return true;
+        }
+    }
+
+    $scope.courseClick = function(course, courses){
+        id = courses.indexOf(course);
+        localStorage.setItem("id", id);
+        window.location = '/course-detail.html';
     }
 })
