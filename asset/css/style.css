@@ -1,5 +1,9 @@
 /* Navbar */
 
+.navbar-brand a.navbar-item:hover {
+	background-color: transparent !important;
+}
+
 nav.navbar.sticky {
 	z-index: 1;
 	top: 0;
