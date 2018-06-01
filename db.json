@@ -1,394 +1,354 @@
 {
     "courses": [
-      { 
-        "name": "AngularJS",
+      {
+        "name": "Learn C# Basic",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
         "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
-        "category" : "enginering",
-        "popular" : true,
-        "rating" : {
-          "totalPoint":"4.7"
-        },
-        "materials": {
-          "0":{
-            "name" : "AngularJS Intro",
-            "video" : "MhQKe-aERsU"
-          },
-          "1" : {
-            "name" : "AngularJS Modules",
-            "video" : "C3e_NZIFfrk"
-          },
-          "2" : {
-            "name" : "AngularJS Controller",
-            "video" : "5nI2i84hZP0"
-          },
-          "3" : {
-            "name" : "AngularJS View",
-            "video" : "pez6ferJlxs"
-          },
-          "4" : {
-            "name" : "AngularJS Data Binding",
-            "video" : "zQ9Wtz6QVv4"
-          }
-        },
-        "author": {
-          "name" : "Budi Raharjo",
-          "picture": "https://bulma.io/images/placeholders/128x128.png",
-          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
-        }
-      },{ 
-        "name": "AngularJS Web",
-        "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
-        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
-        "category" : "enginering",
+        "category" : "Programming",
         "popular" : false,
         "rating" : {
           "totalPoint":"4.7"
         },
         "materials": {
           "0":{
-            "name" : "AngularJS Intro",
-            "video" : "MhQKe-aERsU"
+            "name" : "How to program in C# - Basic",
+            "video" : "pSiIHe2uZ2w&list=PLPV2KyIb3jR6ZkG8gZwJYSjnXxmfPAl51"
           },
           "1" : {
-            "name" : "AngularJS Modules",
-            "video" : "C3e_NZIFfrk"
+            "name" : "How to program in C# - Beginner",
+            "video" : "nA2pSmBmvKg&list=PLPV2KyIb3jR6ZkG8gZwJYSjnXxmfPAl51&index=2"
           },
           "2" : {
-            "name" : "AngularJS Controller",
-            "video" : "5nI2i84hZP0"
+            "name" : "How to program in C# - Variable",
+            "video" : "udoMi4mGYYw&list=PLPV2KyIb3jR6ZkG8gZwJYSjnXxmfPAl51&index=3"
           },
           "3" : {
-            "name" : "AngularJS View",
-            "video" : "pez6ferJlxs"
+            "name" : "How to program in C# - IF STATEMENT",
+            "video" : "OXTK7cnphYY&index=4&list=PLPV2KyIb3jR6ZkG8gZwJYSjnXxmfPAl51"
           },
           "4" : {
-            "name" : "AngularJS Data Binding",
-            "video" : "zQ9Wtz6QVv4"
+            "name" : "How to program in C# - SWITCH STATEMENT",
+            "video" : "Qs-LAYkp9YU&list=PLPV2KyIb3jR6ZkG8gZwJYSjnXxmfPAl51&index=5"
           }
         },
         "author": {
-          "name" : "Budi Raharjo",
+          "name" : "Brackeys",
           "picture": "https://bulma.io/images/placeholders/128x128.png",
           "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
         }
-      },{ 
-        "name": "AngularJS Desktop",
+      },{
+        "name": "Trigonometry - Mathematics",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
         "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
-        "category" : "enginering",
+        "category" : "School Lesson",
         "popular" : false,
         "rating" : {
           "totalPoint":"4.7"
         },
         "materials": {
           "0":{
-            "name" : "AngularJS Intro",
-            "video" : "MhQKe-aERsU"
+            "name" : "TRIGONOMETRY IDENTITIES !! LESSON 1 !!",
+            "video" : "kqlLfBxPcUo&list=PLOoogDtEDyvs5pbg4bNxg4onA6fzvUc55"
           },
           "1" : {
-            "name" : "AngularJS Modules",
-            "video" : "C3e_NZIFfrk"
+            "name" : "TRIGONOMETRY IDENTITIES !! LESSON 2 !!",
+            "video" : "Wkil_7WTToY&index=2&list=PLOoogDtEDyvs5pbg4bNxg4onA6fzvUc55"
           },
           "2" : {
-            "name" : "AngularJS Controller",
-            "video" : "5nI2i84hZP0"
+            "name" : "TRIGONOMETRY Based on COT/TAN Rule !! LESSON 3 !!",
+            "video" : "HzvD5C2NTU0&index=3&list=PLOoogDtEDyvs5pbg4bNxg4onA6fzvUc55"
           },
           "3" : {
-            "name" : "AngularJS View",
-            "video" : "pez6ferJlxs"
+            "name" : "TRIGONOMETRY Find Value of Theta !! LESSON 4 !!",
+            "video" : "pZEYLqItqOY&index=4&list=PLOoogDtEDyvs5pbg4bNxg4onA6fzvUc55"
           },
-          "4" : {
-            "name" : "AngularJS Data Binding",
-            "video" : "zQ9Wtz6QVv4"
-          }
         },
         "author": {
-          "name" : "Budi Raharjo",
+          "name" : "Aji Kamaludin",
           "picture": "https://bulma.io/images/placeholders/128x128.png",
           "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
         }
-      },{ 
-        "name": "AngularJS Mobile",
+      },{
+        "name": "Course Physics",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
         "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
-        "category" : "enginering",
-        "popular" : true,
-        "rating" : {
-          "totalPoint":"4.7"
-        },
-        "materials": {
-          "0":{
-            "name" : "AngularJS Intro",
-            "video" : "MhQKe-aERsU"
-          },
-          "1" : {
-            "name" : "AngularJS Modules",
-            "video" : "C3e_NZIFfrk"
-          },
-          "2" : {
-            "name" : "AngularJS Controller",
-            "video" : "5nI2i84hZP0"
-          },
-          "3" : {
-            "name" : "AngularJS View",
-            "video" : "pez6ferJlxs"
-          },
-          "4" : {
-            "name" : "AngularJS Data Binding",
-            "video" : "zQ9Wtz6QVv4"
-          }
-        },
-        "author": {
-          "name" : "Budi Raharjo",
-          "picture": "https://bulma.io/images/placeholders/128x128.png",
-          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
-        }
-      },{ 
-        "name": "VueJS",
-        "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
-        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
-        "category" : "enginering",
-        "popular" : true,
-        "rating" : {
-          "totalPoint":"4.7"
-        },
-        "materials": {
-          "0":{
-            "name" : "AngularJS Intro",
-            "video" : "MhQKe-aERsU"
-          },
-          "1" : {
-            "name" : "AngularJS Modules",
-            "video" : "C3e_NZIFfrk"
-          },
-          "2" : {
-            "name" : "AngularJS Controller",
-            "video" : "5nI2i84hZP0"
-          },
-          "3" : {
-            "name" : "AngularJS View",
-            "video" : "pez6ferJlxs"
-          },
-          "4" : {
-            "name" : "AngularJS Data Binding",
-            "video" : "zQ9Wtz6QVv4"
-          }
-        },
-        "author": {
-          "name" : "Budi Raharjo",
-          "picture": "https://bulma.io/images/placeholders/128x128.png",
-          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
-        }
-      },{ 
-        "name": "JQuery",
-        "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
-        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
-        "category" : "enginering",
-        "popular" : true,
-        "rating" : {
-          "totalPoint":"4.7"
-        },
-        "materials": {
-          "0":{
-            "name" : "AngularJS Intro",
-            "video" : "MhQKe-aERsU"
-          },
-          "1" : {
-            "name" : "AngularJS Modules",
-            "video" : "C3e_NZIFfrk"
-          },
-          "2" : {
-            "name" : "AngularJS Controller",
-            "video" : "5nI2i84hZP0"
-          },
-          "3" : {
-            "name" : "AngularJS View",
-            "video" : "pez6ferJlxs"
-          },
-          "4" : {
-            "name" : "AngularJS Data Binding",
-            "video" : "zQ9Wtz6QVv4"
-          }
-        },
-        "author": {
-          "name" : "Budi Raharjo",
-          "picture": "https://bulma.io/images/placeholders/128x128.png",
-          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
-        }
-      },{ 
-        "name": "Material Framework",
-        "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
-        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
-        "category" : "enginering",
-        "popular" : true,
-        "rating" : {
-          "totalPoint":"4.7"
-        },
-        "materials": {
-          "0":{
-            "name" : "AngularJS Intro",
-            "video" : "MhQKe-aERsU"
-          },
-          "1" : {
-            "name" : "AngularJS Modules",
-            "video" : "C3e_NZIFfrk"
-          },
-          "2" : {
-            "name" : "AngularJS Controller",
-            "video" : "5nI2i84hZP0"
-          },
-          "3" : {
-            "name" : "AngularJS View",
-            "video" : "pez6ferJlxs"
-          },
-          "4" : {
-            "name" : "AngularJS Data Binding",
-            "video" : "zQ9Wtz6QVv4"
-          }
-        },
-        "author": {
-          "name" : "Budi Raharjo",
-          "picture": "https://bulma.io/images/placeholders/128x128.png",
-          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
-        }
-      },{ 
-        "name": "Matematich",
-        "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
-        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
-        "category" : "enginering",
+        "category" : "School Lesson",
         "popular" : false,
         "rating" : {
           "totalPoint":"4.7"
         },
         "materials": {
           "0":{
-            "name" : "AngularJS Intro",
-            "video" : "MhQKe-aERsU"
+            "name" : "Motion in a Straight Line: Crash Course Physics #1",
+            "video" : "ZM8ECpBuQYE&list=PL8dPuuaLjXtN0ge7yDk_UA0ldZJdhwkoV"
           },
           "1" : {
-            "name" : "AngularJS Modules",
-            "video" : "C3e_NZIFfrk"
+            "name" : "Derivatives: Crash Course Physics #2",
+            "video" : "ObHJJYvu3RE&list=PL8dPuuaLjXtN0ge7yDk_UA0ldZJdhwkoV&index=2"
           },
           "2" : {
-            "name" : "AngularJS Controller",
-            "video" : "5nI2i84hZP0"
+            "name" : "Integrals: Crash Course Physics #3",
+            "video" : "jLJLXka2wEM&index=3&list=PL8dPuuaLjXtN0ge7yDk_UA0ldZJdhwkoV"
           },
           "3" : {
-            "name" : "AngularJS View",
-            "video" : "pez6ferJlxs"
+            "name" : "Vectors and 2D Motion: Crash Course Physics #4",
+            "video" : "w3BhzYI6zXU&list=PL8dPuuaLjXtN0ge7yDk_UA0ldZJdhwkoV&index=4"
           },
           "4" : {
-            "name" : "AngularJS Data Binding",
-            "video" : "zQ9Wtz6QVv4"
+            "name" : "Newton's Laws: Crash Course Physics #5",
+            "video" : "kKKM8Y-u7ds&index=5&list=PL8dPuuaLjXtN0ge7yDk_UA0ldZJdhwkoV"
           }
         },
         "author": {
-          "name" : "Budi Raharjo",
+          "name" : "Tukidi",
           "picture": "https://bulma.io/images/placeholders/128x128.png",
           "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
         }
-      },{ 
-        "name": "Google Map Api",
+      },{
+        "name": "Course Chemistry",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
         "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
-        "category" : "enginering",
+        "category" : "School Lesson",
         "popular" : false,
         "rating" : {
           "totalPoint":"4.7"
         },
         "materials": {
           "0":{
-            "name" : "AngularJS Intro",
-            "video" : "MhQKe-aERsU"
+            "name" : "The Nucleus: Crash Course Chemistry #1",
+            "video" : "FSyAehMdpyI&index=1&list=PL8dPuuaLjXtPHzzYuWy6fYEaX9mQQ8oGr"
           },
           "1" : {
-            "name" : "AngularJS Modules",
-            "video" : "C3e_NZIFfrk"
+            "name" : "Unit Conversion & Significant Figures: Crash Course Chemistry #2",
+            "video" : "hQpQ0hxVNTg&index=2&list=PL8dPuuaLjXtPHzzYuWy6fYEaX9mQQ8oGr"
           },
           "2" : {
-            "name" : "AngularJS Controller",
-            "video" : "5nI2i84hZP0"
+            "name" : "The Creation of Chemistry - The Fundamental Laws: Crash Course Chemistry #3",
+            "video" : "QiiyvzZBKT8&index=3&list=PL8dPuuaLjXtPHzzYuWy6fYEaX9mQQ8oGr"
           },
           "3" : {
-            "name" : "AngularJS View",
-            "video" : "pez6ferJlxs"
+            "name" : "The Periodic Table: Crash Course Chemistry #4",
+            "video" : "0RRVV4Diomg&list=PL8dPuuaLjXtPHzzYuWy6fYEaX9mQQ8oGr&index=4"
           },
           "4" : {
-            "name" : "AngularJS Data Binding",
-            "video" : "zQ9Wtz6QVv4"
+            "name" : "The Electron: Crash Course Chemistry #5",
+            "video" : "rcKilE9CdaA&list=PL8dPuuaLjXtPHzzYuWy6fYEaX9mQQ8oGr&index=5"
           }
         },
         "author": {
-          "name" : "Budi Raharjo",
+          "name" : "Brackeys",
           "picture": "https://bulma.io/images/placeholders/128x128.png",
           "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
         }
       },{ 
-        "name": "Sains",
+        "name": "Course Biology",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
         "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
-        "category" : "enginering",
-        "popular" : false,
-        "rating" : {
-          "totalPoint":"4.7"
-        },
-        "materials": {
-          "0":{
-            "name" : "AngularJS Intro",
-            "video" : "MhQKe-aERsU"
-          },
-          "1" : {
-            "name" : "AngularJS Modules",
-            "video" : "C3e_NZIFfrk"
-          },
-          "2" : {
-            "name" : "AngularJS Controller",
-            "video" : "5nI2i84hZP0"
-          },
-          "3" : {
-            "name" : "AngularJS View",
-            "video" : "pez6ferJlxs"
-          },
-          "4" : {
-            "name" : "AngularJS Data Binding",
-            "video" : "zQ9Wtz6QVv4"
-          }
-        },
-        "author": {
-          "name" : "Budi Raharjo",
-          "picture": "https://bulma.io/images/placeholders/128x128.png",
-          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
-        }
-      },{ 
-        "name": "Anak Ayam",
-        "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
-        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
-        "category" : "IPU",
+        "category" : "School Lesson",
         "popular" : true,
         "rating" : {
-          "totalPoint":"3.7"
+          "totalPoint":"4.7"
         },
         "materials": {
           "0":{
-            "name" : "AngularJS Intro",
-            "video" : "MhQKe-aERsU"
+            "name" : "That's Why Carbon Is A Tramp: Crash Course Biology #1",
+            "video" : "QnQe0xW_JY4&list=PL3EED4C1D684D3ADF"
           },
           "1" : {
-            "name" : "AngularJS Modules",
-            "video" : "C3e_NZIFfrk"
+            "name" : "Water - Liquid Awesome: Crash Course Biology #2",
+            "video" : "HVT3Y3_gHGg&index=2&list=PL3EED4C1D684D3ADF"
           },
           "2" : {
-            "name" : "AngularJS Controller",
-            "video" : "5nI2i84hZP0"
+            "name" : "Biological Molecules - You Are What You Eat: Crash Course Biology #3",
+            "video" : "H8WJ2KENlK0&list=PL3EED4C1D684D3ADF&index=3"
           },
           "3" : {
-            "name" : "AngularJS View",
-            "video" : "pez6ferJlxs"
+            "name" : "Eukaryopolis - The City of Animal Cells: Crash Course Biology #4",
+            "video" : "cj8dDTHGJBY&list=PL3EED4C1D684D3ADF&index=4"
           },
           "4" : {
-            "name" : "AngularJS Data Binding",
-            "video" : "zQ9Wtz6QVv4"
+            "name" : "In Da Club - Membranes & Transport: Crash Course Biology #5",
+            "video" : "dPKvHrD1eS4&list=PL3EED4C1D684D3ADF&index=5"
+          }
+        },
+        "author": {
+          "name" : "Budi Raharjo",
+          "picture": "https://bulma.io/images/placeholders/128x128.png",
+          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
+        }
+      },{ 
+        "name": "Course Statistic",
+        "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
+        "category" : "College Lesson",
+        "popular" : true,
+        "rating" : {
+          "totalPoint":"4.7"
+        },
+        "materials": {
+          "0":{
+            "name" : "What Is Statistics: Crash Course Statistics #1",
+            "video" : "sxQaBpKfDRk&list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr&index=2"
+          },
+          "1" : {
+            "name" : "Mathematical Thinking: Crash Course Statistics #2",
+            "video" : "tN9Xl1AcSv8&list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr&index=3"
+          },
+          "2" : {
+            "name" : "Mean, Median, and Mode: Measures of Central Tendency: Crash Course Statistics #3",
+            "video" : "kn83BA7cRNM&list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr&index=4"
+          },
+          "3" : {
+            "name" : "Measures of Spread: Crash Course Statistics #4",
+            "video" : "R4yfNi_8Kqw&index=5&list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr"
+          },
+          "4" : {
+            "name" : "Charts Are Like Pasta - Data Visualization Part 1: Crash Course Statistics #5",
+            "video" : "hEWY6kkBdpo&index=6&list=PL8dPuuaLjXtNM_Y-bUAhblSAdWRnmBUcr"
+          }
+        },
+        "author": {
+          "name" : "Budi Raharjo",
+          "picture": "https://bulma.io/images/placeholders/128x128.png",
+          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
+        }
+      },{ 
+        "name": "Sociology",
+        "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
+        "category" : "College Lesson",
+        "popular" : true,
+        "rating" : {
+          "totalPoint":"4.7"
+        },
+        "materials": {
+          "0":{
+            "name" : "What Is Sociology?: Crash Course Sociology #1",
+            "video" : "YnCJU6PaCio&index=2&list=PL8dPuuaLjXtMJ-AfB_7J1538YKWkZAnGA"
+          },
+          "1" : {
+            "name" : "Major Sociological Paradigms: Crash Course Sociology #2",
+            "video" : "DbTt_ySTjaY&index=3&list=PL8dPuuaLjXtMJ-AfB_7J1538YKWkZAnGA"
+          },
+          "2" : {
+            "name" : "Sociology & the Scientific Method: Crash Course Sociology #3",
+            "video" : "ZIwyNIdgJBE&index=4&list=PL8dPuuaLjXtMJ-AfB_7J1538YKWkZAnGA"
+          },
+          "3" : {
+            "name" : "Sociology Research Methods: Crash Course Sociology #4",
+            "video" : "QwhK-iEyXYA&index=5&list=PL8dPuuaLjXtMJ-AfB_7J1538YKWkZAnGA"
+          },
+          "4" : {
+            "name" : "Émile Durkheim on Suicide & Society: Crash Course Sociology #5",
+            "video" : "IZfGGF-YYzY&list=PL8dPuuaLjXtMJ-AfB_7J1538YKWkZAnGA&index=6"
+          }
+        },
+        "author": {
+          "name" : "Budi Raharjo",
+          "picture": "https://bulma.io/images/placeholders/128x128.png",
+          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
+        }
+      },{ 
+        "name": "Learn jQuery",
+        "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
+        "category" : "Programming",
+        "popular" : false,
+        "rating" : {
+          "totalPoint":"4.7"
+        },
+        "materials": {
+          "0":{
+            "name" : "What is jQuery? [#1]",
+            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+          },
+          "1" : {
+            "name" : "How to Install jQuery [#2]",
+            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+          },
+          "2" : {
+            "name" : "jQuery Syntax [#3]",
+            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+          },
+          "3" : {
+            "name" : "jQuery Selectors [#4]",
+            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+          },
+          "4" : {
+            "name" : "jQuery Event Methods [#5]",
+            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+          }
+        },
+        "author": {
+          "name" : "Budi Raharjo",
+          "picture": "https://bulma.io/images/placeholders/128x128.png",
+          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
+        }
+      },{ 
+        "name": "English: Learn from basic",
+        "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
+        "category" : "Literature",
+        "popular" : false,
+        "rating" : {
+          "totalPoint":"4.7"
+        },
+        "materials": {
+          "0":{
+            "name" : "Learn English Expressions: JUST IN CASE",
+            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+          },
+          "1" : {
+            "name" : "My TOP 5 Writing Tips (for all levels)",
+            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+          },
+          "2" : {
+            "name" : "How to pronounce 'OF' like a native English speaker",
+            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+          },
+          "3" : {
+            "name" : "How to succeed in your JOB INTERVIEW: Behavioral Questions",
+            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+          },
+          "4" : {
+            "name" : "Take the Present Perfect Progressive challenge!",
+            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+          }
+        },
+        "author": {
+          "name" : "Budi Raharjo",
+          "picture": "https://bulma.io/images/placeholders/128x128.png",
+          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
+        }
+      },{ 
+        "name": "Learn Japanese",
+        "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
+        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
+        "category" : "Literature",
+        "popular" : false,
+        "rating" : {
+          "totalPoint":"4.7"
+        },
+        "materials": {
+          "0":{
+            "name" : "Intro to Japanese - The Hiragana Syllabary, Vowels, Pitch Accents, and More",
+            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+          },
+          "1" : {
+            "name" : "The Katakana Syllabary",
+            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+          },
+          "2" : {
+            "name" : "First Person Pronouns, or, Ways to Say 'I' in Japanese",
+            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+          },
+          "3" : {
+            "name" : "Second-Person Pronouns, or, Ways to Say 'You' in Japanese",
+            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
+          },
+          "4" : {
+            "name" : "Basic Phrases (How-to Greet, Thank, Introduce Yourself and More)",
+            "video" : "46Jz0QJyhN0&list=PLUoqTnNH-2Xwmr2GvOdZMJnrp6b51ndZE"
           }
         },
         "author": {
@@ -398,4 +358,4 @@
         }
       }
     ]
-} 
+}
