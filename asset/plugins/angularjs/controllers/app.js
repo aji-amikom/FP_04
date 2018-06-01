@@ -1,16 +1,17 @@
+var uri = "https://www.mocky.io/v2/5b0cfecc3300005200b40145";
+
 var app = angular.module("RootApp", []);
 
 if(localStorage.getItem("id") == null){
     localStorage.setItem("id", 0);
-    console.log(localStorage.getItem("id"));
 }
     
 app.controller('detailCourse',function($scope, $http){
     $scope.videoNow = 0;
     $scope.minVal = true;
-    $http.get("db.json")
+    $http.get(uri)
     .then(function(response) {
-        id = localStorage.getItem("id");
+        id = localStorage.getItem("id") == null ? 0 : localStorage.getItem("id");
 
         $scope.courses = response.data.courses[id];
         $scope.materials = response.data.courses[id].materials;
@@ -28,28 +29,54 @@ app.controller('detailCourse',function($scope, $http){
         $scope.videoNow = $index;
         console.log(id + ',' + $index+ ','+ $scope.videoNow); 
     }
+})
 
-    $scope.videoBack = function(){
-        console.log($scope.videoNow);
-        if($scope.videoNow <= 0){
-            $scope.minVal = true;
+app.controller('loginController',function($scope){
+    $scope.submitNotif = true;
+    $scope.validateEmail = function(){
+        if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{1,2})+$/.test(email.value)){
+            $scope.cssEmail = "";
+        }else{
+            $scope.cssEmail = "is-danger";
+        }
+    }
+    $scope.passwordNotif = false;
+    $scope.password = '';
+    $scope.$watch('password', function(passwordValue){
+        if(passwordValue == undefined){
             return;
         }
-        $scope.videoNow = $scope.videoNow - 1;
-        $scope.videoId = $scope.materials[$scope.videoNow].video;
-        $scope.url = 'https://www.youtube.com/embed/'+ $scope.videoId +'?autoplay=0'
-        document.getElementById('iframeid').src = $scope.url;
-    }
-
-    $scope.videoNext = function(){
-        console.log($scope.videoNow);
-        if($scope.videoNow >= materialLength){
-            $scope.maxVal = true;
-            return;
+        if(passwordValue.length > 6 || passwordValue == ''){
+            $scope.cssPassword = "";
+            $scope.passwordNotif = false;
+        } else {
+            $scope.cssPassword = "is-danger";
+            $scope.passwordNotif = true;
         }
-        $scope.videoNow = $scope.videoNow + 1;
-        $scope.videoId = $scope.materials[$scope.videoNow].video;
-        $scope.url = 'https://www.youtube.com/embed/'+ $scope.videoId +'?autoplay=0'
-        document.getElementById('iframeid').src = $scope.url;
+     });
+
+    document.addEventListener('change',function(){
+        console.log("change")
+    })
+})
+
+app.controller('indexController',function($scope, $http){
+    $http.get(uri)
+    .then(function(response) {
+        $scope.courses = response.data.courses;
+    });
+    $scope.query = function(course){
+        if(course.popular == false){
+            return false;
+        }else{
+            return true;
+        }
     }
+})
+
+app.controller('courseController',function($scope, $http){
+    $http.get(uri)
+    .then(function(response) {
+        $scope.courses = response.data.courses;
+    });
 })

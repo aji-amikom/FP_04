@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
     <!-- angular -->
     <script src="asset/plugins/angularjs/angular.min.js"></script>
 
@@ -12,6 +13,7 @@
 
     <!-- app -->
     <link rel="stylesheet" href="asset/css/common.css">
+    <link rel="stylesheet" href="asset/css/style.css">
 
     <!-- bulma -->
     <link rel="stylesheet" href="asset/css/bulma.css">
@@ -19,15 +21,16 @@
 
     <!-- spacing -->
     <link rel="stylesheet" href="asset/plugins/css-spacing/css-spacing.css">
+    <link rel="shortcut icon" href="asset/img/logo/favicon.png"/>
 
     <title>E-Learning | Login</title>
 </head>
 
-<div ng-include="'navbar.html'"></div>
+<div ng-include="'view/navbar.html'"></div>
 
 <body>
   
-<section class="hero is-info is-img is-bold is-medium" id="login-back">
+<section class="hero is-info is-img is-bold is-medium mtx" id="login-back">
     <div class="hero-body">
       <div class="container">
         <h1 class="title">
@@ -43,22 +46,21 @@
     </div>
 </section>
 
-<div class="container">
+<div class="container" ng-controller="loginController">
     <div class="columns is-centered is-marginless">
         <div class="column is-9">
-            <div class="columns is-mobile">
+            <div class="columns">
                 <div class="column is-half is-offset-one-quarter">
                     <div class="box">
-                        <article class="media">
-                            <div class="media-content">
+                            <div>
                                 <p class="title is-4 has-text-black is-marginless">
                                     Sign in
                                 </p> 
                                 <hr class="dropdown-divider">  
-                                <form action="." method="post">
+                                <form action="." method="post" name="login">
                                     <div class="field">
                                         <p class="control has-icons-left has-icons-right">
-                                            <input class="input" type="email" placeholder="Email" id="email" required>
+                                            <input class="input {{ cssEmail }}" type="email" placeholder="Email" id="email" ng-keypress="validateEmail()" required>
                                             <span class="icon is-small is-left">
                                             <i class="fas fa-envelope"></i>
                                             </span>
@@ -66,7 +68,8 @@
                                     </div>
                                     <div class="field">
                                         <p class="control has-icons-left">
-                                            <input class="input" type="password" placeholder="Password" id="password" required>
+                                            <input class="input {{ cssPassword }}" type="password" ng-model="password" placeholder="Password" id="password" required>
+                                            <span ng-show="passwordNotif">Password Invalid</span>
                                             <span class="icon is-small is-left">
                                             <i class="fas fa-lock"></i>
                                             </span>
@@ -82,13 +85,13 @@
                                     </div>
                                     <div class="field">
                                         <p class="control">
-                                            <input type="submit" value="Sign In" class="button is-success login-button">
+                                            <input type="submit" value="Sign In" class="button is-success login-button" ng-disabled="submitNotif">
                                         </p>
                                     </div>
                                 </form>
 
                                 <div class="columns is-centered">
-                                    <div class="column is-narrow">
+                                    <div class="column is-narrow mts">
                                         <a>Forgot your password ?</a>
                                     </div>
                                 </div>                                
@@ -104,7 +107,6 @@
                                     <a href="" class="button is-danger is-narrow">Google</a>
                                 </div>
                             </div>
-                        </article>
                     </div>
                     <div class="columns is-centered is-marginless">
                         <div class="column is-narrow">
@@ -117,14 +119,13 @@
     </div>
 </div>
 
-<div ng-include="'footer.html'"></div>
+<div ng-include="'view/footer.html'"></div>
 
 <!-- app -->
 <script src="asset/js/app.js"></script>
 
 <!-- ng-main-controller -->
 <script src="asset/plugins/angularjs/controllers/app.js"></script>
-<!-- <script src="asset/plugins/angularjs/controllers/componen.js"></script> -->
 </body>
 
 

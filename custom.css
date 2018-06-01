@@ -1,0 +1,11 @@
+.background{
+	background-image: url(https://images.pexels.com/photos/82256/pexels-photo-82256.jpeg);
+}
+
+.is-image-centered{
+	margin: 0 auto;
+}
+
+.background-student{
+	background-image: url(book.jpg);
+}

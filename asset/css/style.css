@@ -1,3 +1,25 @@
+/* Navbar */
+
+.navbar-brand a.navbar-item:hover {
+	background-color: transparent !important;
+}
+
+nav.navbar.sticky {
+	z-index: 1;
+	top: 0;
+	transition: all .3s ease-in-out;
+	padding: 15px 0;
+	background: linear-gradient(to right,#480048,#C04848);
+	background: -webkit-linear-gradient(left,#480048,#C04848);
+}
+
+.mm-slideout {
+	transition: -webkit-transform .4s ease;
+	transition: transform .4s ease;
+	transition: transform .4s ease,-webkit-transform .4s ease;
+	z-index: 1;
+}
+
 .hero.hero-banner {
 	background: linear-gradient(rgba(57,39,121,.8), rgba(57,39,121,.8)), url(http://www.ansonika.com/udema/img/home_section_1.jpg) no-repeat center center fixed;
 	background-size: cover;
@@ -66,6 +88,8 @@ span.hr-purple em {
 	text-decoration: line-through !important;
 }
 
+/* Footer */
+
 footer {
 	background-color: #121921 !important;
 	color: rgba(255,255,255,.7);
@@ -110,10 +134,94 @@ footer ul.menu-footer li {
 	float: left;
 }
 
+footer ul.menu-footer li a {
+	color: rgba(255,255,255,.7);
+}
+
+footer ul.menu-footer li a:hover {
+	color: #3f9fff;
+	opacity: 1;
+}
+
 footer .social-footer a {
 	margin-right: 10px;
 	font-size: 20px;
 }
 
+/* Contact Us */
 
+.contact-us-form .input, .contact-us-form .textarea {
+	box-shadow: none;
+}
 
+.contact-us-form .input:focus, .contact-us-form .input:active,
+.contact-us-form .textarea:focus, .contact-us-form .textarea:active {
+	border-color: #92278f !important;
+	box-shadow: none;
+}
+
+.contact-address {
+	font-size: .875rem;
+}
+
+.contact-address .single-address .icon {
+	width: 65px;
+	height: 65px;
+	line-height: 63px;
+	border-radius: 50%;
+	border: 1px solid #e5e5e5;
+	text-align: center;
+	font-size: 30px;
+	margin-top: 7px;
+}
+
+.contact-address .single-address .text {
+	padding-left: 26px;
+	margin-top: 20px;
+}
+
+#map {
+	height: 400px;
+  width: 100%;
+}
+
+/* Dashboard Teacher */
+.line-nav {
+	background-color: #EEE;
+}
+
+.line-nav .navbar-item a {
+	color: #999 !important;
+	font-weight: 500;
+}
+
+.line-nav .navbar-item a:hover {
+	color: #b3b3b3 !important;
+}
+
+.line-nav .navbar-item.active {
+	background: url(../../asset/img/border-tab.png) bottom center repeat-x;
+}
+
+.line-nav .navbar-item.active a {
+	color: #635d5d !important;
+}
+
+.teacher-box {
+	font-size: .875rem;
+}
+
+.box.box-latest-comments {
+	box-shadow: 1px 1px 2px 0 rgba(0,0,0,.1);
+	-moz-box-shadow: 1px 1px 2px 0 rgba(0,0,0,.1);
+	font-size: .875rem;
+}
+
+.navbar-item.has-dropdown-custom:hover .navbar-link {
+	background: none !important;
+}
+.navbar-link::after {
+	border: 1px solid #ffffff;
+	border-right: 0;
+	border-top: 0;
+}
