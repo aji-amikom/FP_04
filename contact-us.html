@@ -80,15 +80,17 @@
   				<form action="#" method="post">
   					<div class="field">
 						  <div class="control">
-						    <input class="input" type="text" placeholder="Your Name*" required>
-						  </div>
+						    <input class="input {{ cssNama }}" type="text" placeholder="Your Name*" ng-model="nama" required>
+							</div>
+							<p class="help is-danger" ng-show="namaInvalid" >name is required</p>
 						</div>
 						<div class="columns mtm">
 							<div class="column">
 								<div class="field">
 								  <div class="control">
-								    <input class="input" type="email" placeholder="Enter Email here*" required>
-								  </div>
+								    <input class="input {{ cssEmail }}" type="email" name="email" id="email" placeholder="Enter Email here*" ng-keypress="validateEmail()" required>
+									</div>
+									<p class="help is-danger" ng-show="emailInvalid" >email is required</p>
 								</div>
 							</div>
 							<div class="column">
@@ -101,13 +103,14 @@
 						</div>
 						<div class="field mtm">
 						  <div class="control">
-						    <textarea class="textarea" type="text" placeholder="Your Message" minlength="100" required></textarea>
-						  </div>
+						    <textarea class="textarea {{ cssMsg }}" type="text" placeholder="Your Message" ng-model="message" required></textarea>
+							</div>
+							<p class="help is-danger" ng-show="msgInvalid">message is required and more character</p>
 						</div>
 
 						<div class="field mtl">
 						  <div class="control">
-						    <button class="button is-info">SEND MESSAGE</button>
+						    <button class="button is-info" ng-disabled="submit	">SEND MESSAGE</button>
 						  </div>
 						</div>
   				</form>

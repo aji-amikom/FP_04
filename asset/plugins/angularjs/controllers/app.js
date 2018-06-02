@@ -320,4 +320,74 @@ app.controller('teacherController',function($scope, $http){
 
 app.controller('contactuscontroller',function($scope){
 
+    anama = false;
+    aemail = false;
+    msg = false;
+
+    $scope.submit = true;
+    function cek(){
+        if(anama && aemail && msg){
+            $scope.submit = false;
+        }else{
+            $scope.submit = true;
+        }
+    }
+
+    $scope.nama = '';
+    $scope.$watch('nama', function(nama){
+           if((nama == undefined || nama == null)){
+               $scope.cssNama = 'is-danger';
+               $scope.namaInvalid = true;
+               anama = false;
+           }else if(nama.length < 4){
+               if(nama.length == 0){
+                   return;
+               }
+               $scope.cssNama = 'is-danger';
+               $scope.namaInvalid = true;
+               anama = false;
+           }else{
+               $scope.cssNama = '';
+               $scope.namaInvalid = false;
+               anama = true;
+           }
+        cek();
+    });
+
+    email.value = ''
+    $scope.validateEmail = function(){
+        
+        if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{1,2})+$/.test(email.value)){
+            $scope.cssEmail = "";
+            $scope.emailInvalid = false;
+            aemail = true;
+        }else{
+            $scope.cssEmail = "is-danger";
+            $scope.emailInvalid = true;
+            aemail = false;
+        }
+        cek()
+    };
+
+    $scope.message = '';
+    $scope.$watch('message', function(message){
+           if((message == undefined || message == null)){
+               $scope.cssMsg = 'is-danger';
+               $scope.msgInvalid = true;
+               msg = false;
+           }else if(message.length < 10){
+               if(message.length == 0){
+                   return;
+               }
+               $scope.cssMsg = 'is-danger';
+               $scope.msgInvalid = true;
+               msg = false;
+           }else{
+               $scope.cssMsg = '';
+               $scope.msgInvalid = false;
+               msg = true;
+           }
+        cek();
+    });
+
 })
