@@ -31,7 +31,7 @@
 
 <body>
 
-<div class="container">
+<div class="container" ng-controller="registerController">
     <div class="columns is-centered is-marginless">
         <div class="column is-9">
             <div class="columns">
@@ -50,40 +50,45 @@
                                 <p class="subtitle is-6">
                                     Your student account is your portal to all things E-Learning: your classroom, projects, forums, career resources, and more!
                                 </p>
-                            <form action="." method="post">
+                            <form action="." method="post" name="register">
                                 <div class="field">
                                     <p class="control has-icons-left has-icons-right">
-                                        <input class="input" type="text" placeholder="Full Name" id="name" required>
+                                        <input class="input {{ cssNama }}" type="text" placeholder="Full Name" id="namapanjang" ng-model="namapanjang" name="namapanjang" required>
                                         <span class="icon is-small is-left">
                                         <i class="fas fa-user"></i>
                                         </span>
                                     </p>
+                                    <p class="help is-danger" ng-show="nameInvalid">name can't be blank</p>
                                 </div>
                                 <div class="field">
                                     <p class="control has-icons-left has-icons-right">
-                                        <input class="input" type="email" placeholder="Email" id="email" required>
+                                        <input class="input {{ cssEmail }}" type="email" placeholder="Email" id="email" name="email" ng-keypress="validateEmail()" required>
                                         <span class="icon is-small is-left">
                                         <i class="fas fa-envelope"></i>
                                         </span>
                                     </p>
+                                    <p class="help is-danger" ng-show="emailInvalid">email is invalid</p>
+                                    <p class="help is-danger" ng-show="emailProblem">email can't be blank</p>
                                 </div>
                                 <div class="field">
                                     <p class="control has-icons-left">
-                                        <input class="input" type="password" placeholder="Password" id="password"required>
+                                        <input class="input {{ cssPassword }}" type="password" placeholder="Password" id="password" ng-model="password" name="password" required>
                                         <span class="icon is-small is-left">
                                         <i class="fas fa-lock"></i>
                                         </span>
                                     </p>
+                                    <p class="help is-danger" ng-show="passwordInvalid">password can't be blank</p>
+                                    <p class="help is-danger" ng-show="passwordProblem">password at least 6 carecter</p>
                                 </div>
                                 <div class="field">
                                     <label for="answer">Pick your plan :</label>
                                     <div class="control columns mas">
-                                        <label class="radio column is-6">
-                                            <input type="radio" name="answer" id="free" required checked>
+                                        <label class="radio column is-6" ng-click="planChange()">
+                                            <input type="radio" name="answer" id="free" ng-model="plan" value="free" required>
                                             Free
                                         </label>
-                                        <label class="radio column is-6">
-                                            <input type="radio" name="answer" id="premium" required>
+                                        <label class="radio column is-6" ng-click="planChange()">
+                                            <input type="radio" name="answer" id="premium" ng-model="plan" value="premium" required>
                                             Premium
                                         </label>
                                     </div>
@@ -91,27 +96,31 @@
                                 <div id="premium-field" class="mtm">
                                     <div class="field">
                                         <p class="control has-icons-left has-icons-right">
-                                            <input class="input" type="text" placeholder="Card Name" id="card-name">
+                                            <input class="input {{ cssCardName }}" type="text" placeholder="Card Name" id="card-name" ng-model="cardName" name="card-name">
                                             <span class="icon is-small is-left">
                                             <i class="fas fa-credit-card"></i>
                                             </span>
                                         </p>
+                                        <p class="help is-danger" ng-show="cardNameInvalid">card can't be invalid</p>
                                     </div>
                                     <div class="field">
                                         <p class="control">
-                                            <input class="input" type="number" placeholder="Card Number" id="card-number">
+                                            <input class="input {{ cssCardNumber }}" type="number" placeholder="Card Number" id="card-number" ng-model="cardNumber" name="card-number">
                                         </p>
+                                        <p class="help is-danger" ng-show="cardNumberInvalid">card number invalid</p>
                                     </div>
                                     <div class="field-body">
                                         <div class="field">
                                             <p class="control is-expanded">
-                                            <input class="input" type="text" placeholder="Card Expired Date">
+                                            <input class="input {{ cssCardDate }}" type="text" placeholder="Card Expired Date" id="card-expired" ng-model="cardDate" name="card-expired">
                                             </p>
+                                            <p class="help is-danger" ng-show="cardDateInvalid">card date invalid</p>
                                         </div>
                                         <div class="field">
                                             <p class="control is-expanded">
-                                            <input class="input" type="number" placeholder="CVC" maxlength="4" >
+                                            <input class="input {{ cssCardCvc }}" type="number" placeholder="CVC" id="card-cvc" ng-model="cardCvc" name="card-cvc" >
                                             </p>
+                                            <p class="help is-danger" ng-show="cardCvcInvalid">card CVC invalid</p>
                                         </div>
                                     </div>
                                 </div>
@@ -122,7 +131,7 @@
                                 </div>
                                 <div class="field">
                                     <p class="control">
-                                        <input type="submit" value="Sign Up" class="button is-success login-button">
+                                        <input type="submit" value="Sign Up" class="button is-success login-button" ng-disabled="submit">
                                     </p>
                                 </div>
                             </form>

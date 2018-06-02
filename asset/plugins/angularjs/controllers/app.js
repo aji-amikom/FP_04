@@ -35,6 +35,183 @@ app.controller('detailCourse',function($scope, $http){
     }
 })
 
+app.controller('registerController',function($scope){
+
+    //define what must be check
+    nama = false;
+    aemail = false;
+    apassword = false;
+    cardName = false;
+    cardNumber = false;
+    cardDate = false;
+    cardCvc = false;
+
+    //the submit button
+    $scope.submit = true;
+
+    //radio choice
+    $scope.plan = 'free';
+
+    function cek(){
+        if($scope.plan == 'free'){
+            if(nama && aemail && apassword && ($scope.plan != undefined)){
+                $scope.submit = false;
+            }else{
+                $scope.submit = true;
+            }
+        }else if($scope.plan == 'premium'){
+            if(nama && aemail && apassword && cardName && cardNumber && cardDate && cardCvc && ($scope.plan != undefined)){
+                $scope.submit = false;
+            }else{
+                $scope.submit = true;
+            }
+        }else{
+            $scope.submit = true;
+        }
+    }
+
+    $scope.planChange = function(){
+        cek();   
+    }
+
+    $scope.namapanjang = '';
+    $scope.$watch('namapanjang', function(namapanjang){
+        if((namapanjang == undefined || namapanjang == null)){
+            $scope.cssNama = 'is-danger';
+            $scope.nameInvalid = true;
+            nama = false;
+        }else{
+            $scope.cssNama = '';
+            $scope.nameInvalid = false;
+            nama = true;
+        }
+        cek();
+     });
+
+    email.value = ''
+    $scope.validateEmail = function(){
+        
+        if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{1,2})+$/.test(email.value)){
+            $scope.cssEmail = "";
+            $scope.emailInvalid = false;
+            aemail = true;
+        }else{
+            aemail = false;
+            $scope.cssEmail = "is-danger";
+            $scope.emailInvalid = true;
+        }
+        cek();
+    } 
+
+    $scope.password = '';
+    $scope.$watch('password', function(password){
+        
+        //case 1
+        if((password == undefined || password == null)){
+            $scope.cssPassword = 'is-danger';
+            $scope.passwordInvalid = true;
+            apassword = false;
+        }else{
+            $scope.cssPassword = '';
+            $scope.passwordInvalid = false;
+        }
+        //case 2
+        if(password == undefined){
+            return;
+        }
+        if(password.length < 6){
+            if(password.length == 0){
+                return;
+            }
+            apassword = false;
+            $scope.cssPassword = 'is-danger';
+            $scope.passwordProblem = true
+        }else{
+            apassword = true;
+            $scope.cssPassword = '';
+            $scope.passwordProblem = false;
+        }
+        cek();
+     });
+
+     $scope.cardName = '';
+     $scope.$watch('cardName', function(cardname){
+         if($scope.plan == 'premium'){
+            if((cardname == undefined || cardname == null)){
+                $scope.cssCardName = 'is-danger';
+                $scope.cardNameInvalid = true;
+            }else if(cardname.length < 6){
+                $scope.cssCardName = 'is-danger';
+                $scope.cardNameInvalid = true;
+                cardName = false;
+            }else{
+                $scope.cssCardName = '';
+                $scope.cardNameInvalid = false;
+                cardName = true;
+            }
+         }
+         cek();
+     });
+
+     $scope.cardNumber = '';
+     $scope.$watch('cardNumber', function(cardnumber){
+         if($scope.plan == 'premium'){
+            if((cardnumber == undefined || cardnumber == null)){
+                $scope.cssCardNumber = 'is-danger';
+                $scope.cardNumberInvalid = true;
+            }else if(cardnumber.toString().length < 12){
+                $scope.cssCardNumber = 'is-danger';
+                $scope.cardNumberInvalid = true;
+                cardNumber = false;
+            }else{
+                $scope.cssCardNumber = '';
+                $scope.cardNumberInvalid = false;
+                cardNumber = true;
+            }
+         }
+         cek();
+     });
+
+     $scope.cardDate = '';
+     $scope.$watch('cardDate', function(carddate){
+         if($scope.plan == 'premium'){
+            if((carddate == undefined || carddate == null)){
+                $scope.cssCardDate = 'is-danger';
+                $scope.cardDateInvalid = true;
+            }else if(carddate.length < 4){
+                $scope.cssCardDate = 'is-danger';
+                $scope.cardDateInvalid = true;
+                cardDate = false;
+            }else{
+                $scope.cssCardDate = '';
+                $scope.cardDateInvalid = false;
+                cardDate = true;
+            }
+         }
+         cek();
+     });
+
+     $scope.cardCvc = '';
+     $scope.$watch('cardCvc', function(cardcvc){
+         if($scope.plan == 'premium'){
+            if((cardcvc == undefined || cardcvc == null)){
+                $scope.cssCardCvc = 'is-danger';
+                $scope.cardCvcInvalid = true;
+            }else if(cardcvc.toString().length < 4 || cardcvc.toString().length > 4){
+                $scope.cssCardCvc = 'is-danger';
+                $scope.cardCvcInvalid = true;
+                cardCvc = false;
+            }else{
+                $scope.cssCardCvc = '';
+                $scope.cardCvcInvalid = false;
+                cardCvc = true;
+            }
+         }
+         cek();
+     });
+
+})
+
 app.controller('loginController',function($scope){
 
     surel = false;
