@@ -41,6 +41,7 @@ app.controller('loginController',function($scope){
     sandi = false;
     $scope.submitNotif = true;
 
+    //to enable the button
     cek = function(){
         if(surel && sandi){
             $scope.submitNotif = false;
@@ -49,27 +50,36 @@ app.controller('loginController',function($scope){
 
     email.value = ''
     $scope.validateEmail = function(){
+        
         if(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{1,2})+$/.test(email.value)){
             $scope.cssEmail = "";
+            $scope.emailInvalid = false;
             surel = true;
         }else{
             $scope.cssEmail = "is-danger";
+            $scope.emailInvalid = true;
             surel = false;
         }
         cek()
-    }
+    } 
 
     $scope.password = '';
     $scope.$watch('password', function(passwordValue){
-        if(passwordValue == undefined){
+        console.log(passwordValue);
+        if(passwordValue == undefined || passwordValue == ''){
             return;
+        }
+        if(passwordValue.length < 6){
+            $scope.passwordInvalid = true;
         }
         if(passwordValue.length > 6 || passwordValue == ''){
             $scope.cssPassword = "";
             if(passwordValue.length > 6){
                 sandi = true;
+                $scope.passwordInvalid = false;
             }
         } else {
+            $scope.passwordInvalid = true;
             $scope.cssPassword = "is-danger";
             sandi = false;
         }
@@ -129,4 +139,8 @@ app.controller('teacherController',function($scope, $http){
         localStorage.setItem("id", id);
         window.location = '/course-detail.html';
     }
+})
+
+app.controller('contactuscontroller',function($scope){
+
 })
