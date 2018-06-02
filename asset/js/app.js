@@ -1,5 +1,6 @@
 console.log('app.js loaded');
 $('#teacher-login').hide();
+$('#premium-field').hide()
 $('#student-tab').on('click', function(){
     if(!$(this).hasClass('is-active')){
         $(this).toggleClass('is-active');
@@ -16,4 +17,12 @@ $('#teacher-tab').on('click', function(){
     }
     $('#student-login').hide();
     $('#teacher-login').show('show');
+})
+
+$('#free').on('click', function(){
+    $('#premium-field').hide()
+})
+
+$('#premium').on('click', function(){
+    $('#premium-field').show()
 })

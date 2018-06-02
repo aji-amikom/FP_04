@@ -68,7 +68,6 @@
                                     </p>
                                 </div>
                                 <div class="field">
-                                        
                                     <p class="control has-icons-left">
                                         <input class="input" type="password" placeholder="Password" id="password"required>
                                         <span class="icon is-small is-left">
@@ -76,9 +75,47 @@
                                         </span>
                                     </p>
                                 </div>
-                                <script>
-                                </script>
                                 <div class="field">
+                                    <label for="answer">Pick your plan :</label>
+                                    <div class="control columns mas">
+                                        <label class="radio column is-6">
+                                            <input type="radio" name="answer" id="free" required checked>
+                                            Free
+                                        </label>
+                                        <label class="radio column is-6">
+                                            <input type="radio" name="answer" id="premium" required>
+                                            Premium
+                                        </label>
+                                    </div>
+                                </div>
+                                <div id="premium-field" class="mtm">
+                                    <div class="field">
+                                        <p class="control has-icons-left has-icons-right">
+                                            <input class="input" type="text" placeholder="Card Name" id="card-name">
+                                            <span class="icon is-small is-left">
+                                            <i class="fas fa-credit-card"></i>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="field">
+                                        <p class="control">
+                                            <input class="input" type="number" placeholder="Card Number" id="card-number">
+                                        </p>
+                                    </div>
+                                    <div class="field-body">
+                                        <div class="field">
+                                            <p class="control is-expanded">
+                                            <input class="input" type="text" placeholder="Card Expired Date">
+                                            </p>
+                                        </div>
+                                        <div class="field">
+                                            <p class="control is-expanded">
+                                            <input class="input" type="number" placeholder="CVC" maxlength="4" >
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="field mts">
                                     <p class="control">
                                         By clicking Sign Up, you agree to our Terms of Use and our Privacy Policy.
                                     </p>
