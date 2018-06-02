@@ -318,6 +318,26 @@ app.controller('teacherController',function($scope, $http){
     }
 })
 
+app.controller('studentBookmarkController',function($scope, $http){
+    $http.get(uri)
+    .then(function(response) {
+        $scope.courses = response.data.courses;
+    });
+    $scope.query = function(course){
+        if(course.hasTeacher == false || course.hasTeacher == null || course.hasTeacher == undefined){
+            return false;
+        }else{
+            return true;
+        }
+    }
+
+    $scope.courseClick = function(course, courses){
+        id = courses.indexOf(course);
+        localStorage.setItem("id", id);
+        window.location = '/course-detail.html';
+    }
+})
+
 app.controller('contactuscontroller',function($scope){
 
     anama = false;
