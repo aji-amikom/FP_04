@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="RootApp">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Hello Bulma!</title>
+	<title>Dashboard | Udemam</title>
+	<!-- angular -->
+	<script src="asset/plugins/angularjs/angular.min.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="asset/css/bulma.css">
 	<link rel="stylesheet" href="asset/plugins/fontawesome/css/fontawesome-all.min.css">
 	<link rel="stylesheet" href="asset/plugins/css-spacing/css-spacing.css">
 	<link rel="stylesheet" type="text/css" href="asset/css/style.css">
-	<link rel="stylesheet" type="text/css" href="custom.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/custom.css">
   <link rel="shortcut icon" href="asset/img/logo/favicon.png"/>
 	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
@@ -45,103 +47,41 @@
 
 <!-- Header -->
 <section class="hero is-medium is-light background-student">
-	<div class="hero-head">
-		<nav class="navbar pvs is-fixed-top sticky">
-			<div class="container">
-				<div class="navbar-brand">
-					<a class="navbar-item" href="../index.html">
-						<img src="asset/img/logo/logo.png" alt="Logo">
-					</a>
-					<span class="navbar-burger burger" data-target="navbarMenu">
-						<span></span>
-						<span></span>
-						<span></span>
-					</span>
-				</div>
-				<div id="navbarMenu" class="navbar-menu">
-					<div class="navbar-end">
-						<span class="navbar-item">
-							<a class="has-text-white has-text-weight-semibold is-size-6" href="index.html">
-								<span>HOME</span>
-							</a>
-						</span>
-						<span class="navbar-item">
-							<a class="has-text-white has-text-weight-semibold" href="course.html">
-								<span>COURSES</span>
-							</a>
-						</span>
-						<span class="navbar-item">
-							<a class="has-text-white has-text-weight-semibold" href="about-us.html">
-								<span>ABOUT US</span>
-							</a>
-						</span>
-						<span class="navbar-item">
-							<a class="has-text-white has-text-weight-semibold" href="contact-us.html">
-								<span>CONTACT</span>
-							</a>
-						</span>
-						<div class="navbar-item has-dropdown has-dropdown-custom is-hoverable">
-					    <a class="navbar-link">
-					      <p class="image is-32x32">
-									<img class="is-rounded" src="fotoharish.jpg">
-								</p>
-					    </a>
-
-					    <div class="navbar-dropdown navbar-dropdown-custom">
-					      <a class="navbar-item" href="#">
-					        Dashboard
-					      </a>
-					      <a class="navbar-item" href="#">
-					        My Courses
-					      </a>
-					      <a class="navbar-item" href="#">
-					        Messages
-					      </a>
-					      <a class="navbar-item" href="#">
-					        Profile
-					      </a>
-					      <a class="navbar-item" href="#">
-					        Logout
-					      </a>
-					    </div>
-					  </div>
-					</div>
-				</div>
-			</div>
-		</nav>
-	</div>
+  <div class="hero-head">
+    <div ng-include="'view/navbar-login.html'"></div>
+  </div>
   <div class="hero-body">
-    <div class="container">
-    	<h1 class="title has-text-centered pbl">
-    		PROFIL HARISH SETYO HUDNANTO
-    	</h1>
-    	<div class="columns">
-    		<div class="column">
-    			<p class="image is-128x128 is-image-centered">
-				     <img class="is-rounded" src="fotoharish.jpg">
-					 </p>
-    		</div>
-    		<div class="column has-text-centered">	
-    			<p class="title is-4">@harishsetyo</p>
-    			<p class="title is-4">Condong Catur, Yogyakarta</p>
-    		</div>
-    		<div class="column has-text-centered">
-    			<a href="#"><i class="fab fa-facebook has-text-dark fa-lg fa-2x"></i></a>
-		  		<a href="#"><i class="fab fa-twitter-square has-text-dark fa-lg fa-2x"></i></a>
-		  		<p class="title is-4">Student at University of Amikom Yogyakarta</p>
-    		</div>
-    	</div>
-    	<div class="columns">
-    		<div class="column has-text-centered">
-    			<p class="title is-4">5 COURSES BEGIN</p>
-    		</div>
-    		<div class="column has-text-centered">	
-    			<p class="title is-4">9 COURSES FINISH</p>
-    		</div>
-    		<div class="column has-text-centered">
-    			<P class="title is-4">1000 EXPERIENCES</P>
-    		</div>
-    	</div>
+    <div class="container"><br>
+      <h1 class="title has-text-centered mtl is-size-5">
+        STUDENT
+      </h1>
+      <div class="columns">
+        <div class="column">
+          <p class="image is-128x128 is-image-centered">
+             <img class="is-rounded" src="asset/img/fotoharish.jpg">
+           </p>
+        </div>
+        <div class="column has-text-centered">  
+          <p class="title is-5">@harishsetyo</p>
+          <p class="title is-5">Condong Catur, Yogyakarta</p>
+        </div>
+        <div class="column has-text-centered">
+          <a href="#"><i class="fab fa-facebook has-text-dark fa-lg fa-2x"></i></a>
+          <a href="#"><i class="fab fa-twitter-square has-text-dark fa-lg fa-2x"></i></a>
+          <p class="title is-5">Student at University of Amikom Yogyakarta</p>
+        </div>
+      </div>
+      <div class="columns">
+        <div class="column has-text-centered">
+          <p class="title is-5">5 COURSES IN PROGRESS</p>
+        </div>
+        <div class="column has-text-centered">  
+          <p class="title is-5">9 COURSES FINISH</p>
+        </div>
+        <div class="column has-text-centered">
+          <P class="title is-5">1000 EXPERIENCES</P>
+        </div>
+      </div>
     </div>
   </div>
   <div class="hero-foot">
@@ -161,8 +101,8 @@
 </section>
 <!-- Profil -->
 <div class="container">
-	<section class="ptxl pbxl">
-		<h1 class="title has-text-centered">STUDENT DASHBOARD REVIEW</h1>
+	<section class="mtxl mbl">
+		<h1 class="title has-text-centered is-4">STUDENT DASHBOARD REVIEW</h1>
 	</section>
 	<section>
 		<div class="card">
@@ -177,14 +117,14 @@
 		    </a>
 		  </header>
 		  <div class="card-content">
-		    <div class="content">
+		    <div class="content has-text-justified">
 		      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 		      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 		      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 		      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 		      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 		      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		      <br>
+		      <br><br>
 		      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
 		    </div>
 		  </div>
@@ -195,74 +135,22 @@
 		</div>
 	</section>
 	<section>
-		<h1 class="title ptxl has-text-centered">MONTHLY MONITORING STATUS</h1>
-		<div id="chart_div" style="width: 100%; height: 500px;"></div>
+		<h1 class="title mtxl has-text-centered is-4">MONTHLY MONITORING STATUS</h1>
+		<div class="columns">
+			<div class="column">
+        <div class="chart-responsive" style="overflow-x: auto;height: 540px;">
+          <div id="chart_div" style="width: 100%; height: 500px;"></div>
+        </div>
+			</div>
+		</div>
 	</section>
-	
-
 </div>
 
 <!-- Footer -->
-<footer class="footer is-purple-deep mtl">
-  <div class="container ptl mbl">
-  	<div class="columns">
-		  <div class="column is-3">
-		  	<p class="mbl">
-		  		<img src="asset/img/logo/logo.png" alt="Logo" width="149" height="42">
-		  	</p>
-		  	<p>Abilities or he perfectly pretended so strangers be exquisite. Oh to another chamber pleased imagine do in. Went me rank at last loud shot an draw. Excellent so to no sincerity smallness.</p>
-		  </div>
-		  <div class="column">
-		  	<div class="newsletter-footer mbl">
-		  		<form action="#" method="post">
-		  			<div class="columns">
-						  <div class="column is-two-thirds">
-						  	<div class="field has-addons">
-								  <div class="control is-expanded">
-								    <input class="input" type="email" placeholder="Enter your email address">
-								  </div>
-								  <div class="control">
-								    <a class="button is-primary">
-								      Subscribe
-								    </a>
-								  </div>
-								</div>
-						  </div>
-						</div>
-		  		</form>
-		  	</div>
-		  	<ul class="menu-footer">
-		  		<li><a href="#">About</a></li>
-		  		<li><a href="../contact-us.html">Contact</a></li>
-		  		<li><a href="#">Careers</a></li>
-		  		<li><a href="#">Privacy</a></li>
-		  		<li><a href="#">Terms</a></li>
-		  		<li><a href="#">Help</a></li>
-		  		<li><a href="#">Press</a></li>
-		  		<li><a href="#">Community</a></li>
-		  	</ul>
-		  </div>
-		  <div class="column is-3">
-		  	<div class="social-footer mbl">
-		  		<a href="#"><i class="fab fa-facebook has-text-light fa-lg"></i></a>
-		  		<a href="#"><i class="fab fa-twitter-square has-text-light fa-lg"></i></a>
-		  		<a href="#"><i class="fab fa-google-plus-square has-text-light fa-lg"></i></a>
-		  		<a href="#"><i class="fab fa-medium has-text-light fa-lg"></i></a>
-		  		<a href="#"><i class="fab fa-youtube-square has-text-light fa-lg"></i></a>
-		  		<a href="#"><i class="fab fa-vimeo-square has-text-light fa-lg"></i></a>
-		  		<a href="#"><i class="fab fa-pinterest-square has-text-light fa-lg"></i></a>
-		  	</div>
-		  	<p class="footer-address">
-		  		11/87, Santisuk Road, T. Sabarang, A.Muang, Pattani 94000
-		  		<br>
-		  		<span class="has-text-white has-text-weight-bold is-size-4 mts mbs">+66 74 665 855</span>
-		  		support@elearning.com
-		  	</p>
-		  </div>
-		</div>
-  </div>
-</footer>
+<div ng-include="'view/footer.html'"></div>
 
+<!-- ng-main-controller -->
+<script src="asset/plugins/angularjs/controllers/app.js"></script>
 <script type="text/javascript" src="asset/js/main.js"></script>
 </body>
 </html>

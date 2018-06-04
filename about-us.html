@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="RootApp">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Hello Bulma!</title>
+	<title>About Us | Udemam</title>
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 	<link rel="stylesheet" href="asset/css/bulma.css">
 	<link rel="stylesheet" href="asset/plugins/fontawesome/css/fontawesome-all.min.css">
 	<link rel="stylesheet" href="asset/plugins/css-spacing/css-spacing.css">
-	<link rel="stylesheet" type="text/css" href="custom.css">
+	<link rel="stylesheet" type="text/css" href="asset/css/custom.css">
 	<link rel="stylesheet" type="text/css" href="asset/css/style.css">
-  <link rel="shortcut icon" href="asset/img/logo/favicon.png"/>
+	<link rel="shortcut icon" href="asset/img/logo/favicon.png"/>
+	<!-- angular -->
+	<script src="asset/plugins/angularjs/angular.min.js"></script>
 </head>
 <body>
 
@@ -74,19 +76,20 @@
 	<section class="section ptxl">
 		<!-- WHY -->
 		<div class="container">
-      <table class="table">
-      	<td>
-      		<figure class="image is-256x256">
-  						<img src="contact-us.jpg">
+			<div class="columns">
+				<div class="column is-half">
+					<figure class="image is-256x256">
+  						<img src="asset/img/about-us.jpg">
 					</figure>
-      	</td>
-      	<td style="width: 50%;">
-      		<p class="title phxl ptxl has-text-centered">WHY CHOOSE UDEMAM</p>
-      		<hr class="mlm has-text-centered" style="height: 5px;">
-					<p class="subtitle phxl has-text-centered">We learn together, we help each other</p>
-      	</td>
-      	
-      </table>
+				</div>
+				<div class="column is-half mtxl">
+					<div class="has-text-centered is-size-1-mobile">
+						<p class="title ">WHY CHOOSE UDEMAM</p>
+	      		<hr style="height: 5px;">
+						<p class="subtitle">We learn together, we help each other</p>
+					</div>
+				</div>
+			</div>
     </div>
 	</section>
 
@@ -97,42 +100,39 @@
       <article class="tile is-child notification is-grey-lighter">
         <div class="content pvl">
           <!-- Content -->
-          <div class="columns ptl">
-					  <div class="column has-text-centered">
+          <div class="columns is-multiline mtm">
+					  <div class="column is-4 has-text-centered mtm">
 					    <span class="icon">
 							  <i class="fas fa-5x fa-user-tie	"></i>
 							</span>
 							<h3>QUALIFIED TEACHER</h3>
 					  </div>
-					  <div class="column has-text-centered">
+					  <div class="column is-4 has-text-centered mtm">
 					    <span class="icon">
 							  <i class="fas fa-5x fa-desktop	"></i>
 							</span>
 							<h3 class="has-text-centered">EQUIPED CLASSROOM</h3>
 					  </div>
-					  <div class="column has-text-centered">
+					  <div class="column is-4 has-text-centered mtm">
 					    <span class="icon">
 							  <i class="fas fa-5x fa-thumbs-up	"></i>
 							</span>
 							<h3 class="has-text-centered">ADVANCED TEACHING</h3>
 					  </div>
-					</div>
-					<div class="content pvl">
-          <!-- Content -->
-          <div class="columns ptl">
-					  <div class="column has-text-centered">
+					
+					  <div class="column is-4 has-text-centered mtm">
 					    <span class="icon">
 							  <i class="fas fa-5x fa-handshake	"></i>
 							</span>
 							<h3>ADVANCED STUDY PLANS</h3>
 					  </div>
-					  <div class="column has-text-centered">
+					  <div class="column is-4 has-text-centered mtm">
 					    <span class="icon">
 							  <i class="fas fa-5x fa-eye	"></i>
 							</span>
 							<h3 class="has-text-centered">FOCUS ON TARGET</h3>
 					  </div>
-					  <div class="column has-text-centered">
+					  <div class="column is-4 has-text-centered mtm">
 					    <span class="icon">
 							  <i class="fas fa-5x fa-graduation-cap	"></i>
 							</span>
@@ -160,9 +160,9 @@
 		  		</figure>
   			</div>
   			<div class="column">
-  				<div class="tile is-parent">
+  				<div class="tile is-parent has-text-centered is-size-1-mobile has-text-justified">
       			<article class="tile is-child notification is-grey-lighter">
-		          <p class="subtitle pvl mbl is-4 has-text-centered"> We agreed to create a container that serves to spread the positive things in the form of science, insight, and inspiration to Internet users. Our targets are users who are still sitting in school in particular and internet users in general. With this UDEMAM, we hope to help the problems of the school and higher level, educate the community with knowledge, and become a pioneer in the world of education with online-based.</p>
+		          <p class="subtitle pvl mbl is-5"> We agreed to create a container that serves to spread the positive things in the form of science, insight, and inspiration to Internet users. Our targets are users who are still sitting in school in particular and internet users in general. With this UDEMAM, we hope to help the problems of the school and higher level, educate the community with knowledge, and become a pioneer in the world of education with online-based.</p>
 		        </article>
 		      </div>
   			</div>
@@ -171,67 +171,11 @@
 	</section>
 </div>
 <!-- Footer -->
-<footer class="footer is-purple-deep mtl">
-  <div class="container ptl mbl">
-  	<div class="columns">
-		  <div class="column is-3">
-		  	<p class="mbl">
-		  		<img src="asset/img/logo/logo.png" alt="Logo" width="149" height="42">
-		  	</p>
-		  	<p>Abilities or he perfectly pretended so strangers be exquisite. Oh to another chamber pleased imagine do in. Went me rank at last loud shot an draw. Excellent so to no sincerity smallness.</p>
-		  </div>
-		  <div class="column">
-		  	<div class="newsletter-footer mbl">
-		  		<form action="#" method="post">
-		  			<div class="columns">
-						  <div class="column is-two-thirds">
-						  	<div class="field has-addons">
-								  <div class="control is-expanded">
-								    <input class="input" type="email" placeholder="Enter your email address">
-								  </div>
-								  <div class="control">
-								    <a class="button is-primary">
-								      Subscribe
-								    </a>
-								  </div>
-								</div>
-						  </div>
-						</div>
-		  		</form>
-		  	</div>
-		  	<ul class="menu-footer">
-		  		<li><a href="#">About</a></li>
-		  		<li><a href="../contact-us.html">Contact</a></li>
-		  		<li><a href="#">Careers</a></li>
-		  		<li><a href="#">Privacy</a></li>
-		  		<li><a href="#">Terms</a></li>
-		  		<li><a href="#">Help</a></li>
-		  		<li><a href="#">Press</a></li>
-		  		<li><a href="#">Community</a></li>
-		  	</ul>
-		  </div>
-		  <div class="column is-3">
-		  	<div class="social-footer mbl">
-		  		<a href="#"><i class="fab fa-facebook has-text-light fa-lg"></i></a>
-		  		<a href="#"><i class="fab fa-twitter-square has-text-light fa-lg"></i></a>
-		  		<a href="#"><i class="fab fa-google-plus-square has-text-light fa-lg"></i></a>
-		  		<a href="#"><i class="fab fa-medium has-text-light fa-lg"></i></a>
-		  		<a href="#"><i class="fab fa-youtube-square has-text-light fa-lg"></i></a>
-		  		<a href="#"><i class="fab fa-vimeo-square has-text-light fa-lg"></i></a>
-		  		<a href="#"><i class="fab fa-pinterest-square has-text-light fa-lg"></i></a>
-		  	</div>
-		  	<p class="footer-address">
-		  		11/87, Santisuk Road, T. Sabarang, A.Muang, Pattani 94000
-		  		<br>
-		  		<span class="has-text-white has-text-weight-bold is-size-4 mts mbs">+66 74 665 855</span>
-		  		support@elearning.com
-		  	</p>
-		  </div>
-		</div>
-  </div>
-</footer>
+<div ng-include="'view/footer.html'"></div>
 
 <script type="text/javascript" src="asset/js/jquery-3.0.0.min.js"></script>
 <script type="text/javascript" src="asset/js/main.js"></script>
+<!-- ng-main-controller -->
+<script src="asset/plugins/angularjs/controllers/app.js"></script>
 </body>
 </html>

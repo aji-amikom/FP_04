@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="RootApp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <!-- angular -->
+    <script src="asset/plugins/angularjs/angular.min.js"></script>
+
+    <!-- jquery -->
+    <script src="asset/plugins/jquery/jquery-3.3.1.js"></script>
+
+    <!-- app -->
+    <link rel="stylesheet" href="asset/css/common.css">
+    <link rel="stylesheet" href="asset/css/style.css">
+
+    <!-- bulma -->
+    <link rel="stylesheet" href="asset/css/bulma.css">
+    <script defer src="asset/js/all.js"></script>
+
+    <!-- spacing -->
+    <link rel="stylesheet" href="asset/plugins/css-spacing/css-spacing.css">
+    <link rel="shortcut icon" href="asset/img/logo/favicon.png"/>
+
+    <title>Forum | Udemam</title>
+</head>
+
+<div ng-include="'view/navbar.html'"></div>
+
+<body>
+  
+<section class="hero is-bold is-primary mtx">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title has-text-white">
+            <p class="title is-4">
+                Forum
+            </p>
+            <p class="subtitle is-6">
+                You can discus with all of your friend here.
+            </p>
+        </h1>
+      </div>
+    </div>
+</section>
+
+<div class="container mtl">
+  <h1 class="subtitle">Latest issue</h1>
+  <div class="dropdown-divider"></div>
+  <div class="columns">
+    <div class="field column has-addons">
+      <input class="input is-2" type="text" placeholder="Search">
+      <div class="dropdown is-hoverable">
+        <div class="dropdown-trigger">
+          <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+            <span>Category</span>
+            <span class="icon is-small">
+              <i class="fas fa-angle-down" aria-hidden="true"></i>
+            </span>
+          </button>
+        </div>
+        <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+          <div class="dropdown-content">
+            <a href="#" class="dropdown-item">
+              Programming
+            </a>
+            <a href="#" class="dropdown-item">
+              School Lesson
+            </a>
+            <a href="#" class="dropdown-item">
+              College Lesson
+            </a>
+            <a href="#" class="dropdown-item">
+              Literature
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="columns is-multiline is-mobile mtm">
+
+      <div class="column is-12">
+        <article class="media box">
+          <div class="media-content">
+            <div class="content">
+              <p>
+                <a href="#">
+                  <strong>How to update DOM with jQuery</strong>
+                </a>
+                <br>
+                <small>@jfla</small> <small>31m</small>
+                <br>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+              </p>
+              <small><p>100 Comments</p></small> 
+            </div>
+          </div>
+          <div class="media-right">
+              <span class="tag is-info">jQuery</span>
+              <span class="tag is-danger">Javascript</span>
+              <span class="tag is-warning">HTML DOM</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="column is-12">
+          <article class="media box">
+            <div class="media-content">
+              <div class="content">
+                <p>
+                  <a href="#">
+                    <strong>How to learn javascript with easy</strong>
+                  </a>
+                  <br>
+                  <small>@hon</small> <small>31m</small>
+                  <br>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+                </p>
+                <small><p>100 Comments</p></small> 
+              </div>
+            </div>
+            <div class="media-right">
+                <span class="tag is-link">Javascript</span>
+                <span class="tag is-warning">HTML DOM</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="column is-12">
+            <article class="media box">
+              <div class="media-content">
+                <div class="content">
+                  <p>
+                    <a href="#">
+                      <strong>How to update data with angularjs</strong>
+                    </a>
+                    <br>
+                    <small>@whongseng</small> <small>31m</small>
+                    <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+                  </p>
+                  <small><p>100 Comments</p></small> 
+                </div>
+              </div>
+              <div class="media-right">
+                  <span class="tag is-info">angularjs</span>
+                  <span class="tag is-danger">Javascript</span>
+              </div>
+            </article>
+          </div>
+
+          <div class="column is-12">
+              <article class="media box">
+                <div class="media-content">
+                  <div class="content">
+                    <p>
+                      <a href="#">
+                        <strong>How to understand math</strong>
+                      </a>
+                      <br>
+                      <small>@adamh</small> <small>31m</small>
+                      <br>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+                    </p>
+                    <small><p>100 Comments</p></small> 
+                  </div>
+                </div>
+                <div class="media-right">
+                    <span class="tag is-link">logic</span>
+                </div>
+              </article>
+            </div>
+
+            <div class="column is-12">
+                <article class="media box">
+                  <div class="media-content">
+                    <div class="content">
+                      <p>
+                        <a href="#">
+                          <strong>Good public speaking</strong>
+                        </a>
+                        <br>
+                        <small>@johnsmith</small> <small>31m</small>
+                        <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare magna eros, eu pellentesque tortor vestibulum ut. Maecenas non massa sem. Etiam finibus odio quis feugiat facilisis.
+                      </p>
+                      <small><p>100 Comments</p></small> 
+                    </div>
+                  </div>
+                  <div class="media-right">
+                      <span class="tag is-info">social</span>
+                  </div>
+                </article>
+              </div>
+      
+
+    </div>
+</div>
+
+<div ng-include="'view/footer.html'"></div>
+
+<!-- app -->
+<script src="asset/js/app.js"></script>
+
+<!-- ng-main-controller -->
+<script src="asset/plugins/angularjs/controllers/app.js"></script>
+</body>
+
+
+</html>
