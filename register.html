@@ -24,30 +24,30 @@
     <link rel="shortcut icon" href="asset/img/logo/favicon.png"/>
     
 	
-    <title>Register | Udemam</title>
+    <title>Sign-Up | Udemam</title>
 </head>
 
 <div ng-include="'view/navbar.html'"></div>
 
-<body>
+<body class="bg-grey-light">
 
 <div class="container" ng-controller="registerController">
     <div class="columns is-centered is-marginless">
         <div class="column is-9">
             <div class="columns">
-                <div class="column is-half is-offset-one-quarter">
+                <div class="column is-three-fifths is-offset-one-fifth">
                     <div class="tabs is-centered is-large is-fullwidth mtxl">
                         <ul>
                             <li class="is-active" id="student-tab"><a>Student</a></li>
                             <li id="teacher-tab"><a>Teacher</a></li>
                         </ul>
                     </div>
-                    <div class="box">
+                    <div class="box box-login">
                             <div id="student-login">
-                                <p class="title is-4">
+                                <p class="title is-4 has-text-black has-text-weight-light is-marginless">
                                     Create your student account
                                 </p>
-                                <p class="subtitle is-6">
+                                <p class="form-description">
                                     Your student account is your portal to all things E-Learning: your classroom, projects, forums, career resources, and more!
                                 </p>
                             <form action="." method="post" name="register">
@@ -125,7 +125,7 @@
                                     </div>
                                 </div>
                                 <div class="field mts">
-                                    <p class="control">
+                                    <p class="description-other-sign-in">
                                         By clicking Sign Up, you agree to our Terms of Use and our Privacy Policy.
                                     </p>
                                 </div>
@@ -136,22 +136,32 @@
                                 </div>
                             </form>
                             <hr class="dropdown-divider">
-                                <div class="columns is-centered">
+                                <div class="columns">
                                     <div class="column is-narrow">
-                                        <p>or sign up with one of these services</p>
+                                        <p class="description-other-sign-in">or sign up with one of these services</p>
                                     </div>
                                 </div>
                                 <div class="buttons is-centered">
-                                    <a href="" class="button is-info is-narrow">Facebook</a>
-                                    <a href="" class="button is-danger is-narrow">Google</a>
+                                    <a href="" class="button social-login is-uppercase">
+                                        <div class="provide-social-login">
+                                            <img src="asset/img/svg/facebook.svg">
+                                            Facebook
+                                        </div>
+                                    </a>
+                                    <a href="" class="button social-login is-uppercase">
+                                        <div class="provide-social-login">
+                                            <img src="asset/img/svg/google.svg">
+                                            Google
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
 
                             <div id="teacher-login">
-                                    <p class="title is-4">
+                                    <p class="title is-4 has-text-black has-text-weight-light is-marginless">
                                         Create your teacher account
                                     </p>
-                                    <p class="subtitle is-6">
+                                    <p class="form-description">
                                         Your teacher account is your portal to all things E-Learning: your classroom, projects, forums, career resources, and more!
                                     </p>
                                 <form action="." method="post">
@@ -180,25 +190,35 @@
                                         </p>
                                     </div>
                                     <div class="field">
-                                        <p class="control">
+                                        <p class="description-other-sign-in">
                                             By clicking Sign Up, you agree to our Terms of Use and our Privacy Policy.
                                         </p>
                                     </div>
-                                    <div class="field">
+                                    <div class="field mbl">
                                         <p class="control">
                                             <input type="submit" value="Sign Up" class="button is-success login-button">
                                         </p>
                                     </div>
                                 </form>
                                 <hr class="dropdown-divider">
-                                    <div class="columns is-centered">
+                                    <div class="columns">
                                         <div class="column is-narrow">
-                                            <p>or sign up with one of these services</p>
+                                            <p class="description-other-sign-in">or sign in with one of these services</p>
                                         </div>
                                     </div>
                                     <div class="buttons is-centered">
-                                        <a href="" class="button is-info is-narrow">Facebook</a>
-                                        <a href="" class="button is-danger is-narrow">Google</a>
+                                        <a href="" class="button social-login is-uppercase">
+                                            <div class="provide-social-login">
+                                                <img src="asset/img/svg/facebook.svg">
+                                                Facebook
+                                            </div>
+                                        </a>
+                                        <a href="" class="button social-login is-uppercase">
+                                            <div class="provide-social-login">
+                                                <img src="asset/img/svg/google.svg">
+                                                Google
+                                            </div>
+                                        </a>
                                     </div>
                                 </div>
                     </div>
