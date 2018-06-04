@@ -12,34 +12,6 @@
 	<link rel="stylesheet" type="text/css" href="asset/css/style.css">
 	<link rel="stylesheet" type="text/css" href="custom.css">
   <link rel="shortcut icon" href="asset/img/logo/favicon.png"/>
-	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script type="text/javascript">
-      google.charts.load('current', {'packages':['corechart']});
-      google.charts.setOnLoadCallback(drawVisualization);
-
-      function drawVisualization() {
-        // Some raw data (not necessarily accurate)
-        var data = google.visualization.arrayToDataTable([
-         ['Month', 'Sains', 'Chemistry', 'Technology', 'Mathematics', 'Physics', 'Average'],
-         ['Jan',  2,      2,        1,             1,         1,      1.4],
-         ['Feb',  2,      1,        1,             2,         2,      1.5],
-         ['Mar',  2,      1,        2,             2,         1,      1.55],
-         ['Apr',  1,      1,        1,             1,         2,      1.375],
-         ['May',  2,      1,        1,             2,         2,      1.4875],
-         ['Jun',  1,      2,        1,             1,         1,      1.34375]
-      ]);
-
-    var options = {
-      vAxis: {title: 'Course (Category)'},
-      hAxis: {title: 'Month'},
-      seriesType: 'bars',
-      series: {5: {type: 'line'}}
-    };
-
-    var chart = new google.visualization.ComboChart(document.getElementById('chart_div'));
-    chart.draw(data, options);
-  }
-    </script>
 </head>
 <body>
 
@@ -148,8 +120,8 @@
     <nav class="tabs is-boxed is-fullwidth">
       <div class="container">
         <ul>
-          <li class="is-active"><a >Profil</a></li>
-          <li><a href="dashboard-student-bookmarks.html">Bookmark</a></li>
+          <li ><a href="dashboard-student.html">Profil</a></li>
+          <li class="is-active"><a >Bookmark</a></li>
           <li></li>
           <li></li>
           <li></li>
@@ -161,46 +133,174 @@
 </section>
 <!-- Profil -->
 <div class="container">
-	<section class="ptxl pbxl">
-		<h1 class="title has-text-centered">STUDENT DASHBOARD REVIEW</h1>
-	</section>
-	<section>
-		<div class="card">
-		  <header class="card-header">
-		    <p class="card-header-title">
-		      Note
-		    </p>
-		    <a href="#" class="card-header-icon" aria-label="more options">
-		      <span class="icon">
-		        <i class="fas fa-angle-down" aria-hidden="true"></i>
-		      </span>
-		    </a>
-		  </header>
-		  <div class="card-content">
-		    <div class="content has-text-justified">
-		      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-		      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-		      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-		      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-		      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-		      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		      <br><br>
-		      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-		    </div>
-		  </div>
-		  <footer class="card-footer">
-		    <a href="#" class="card-footer-item has-text-white">Save</a>
-		    <a href="#" class="card-footer-item has-text-white">Edit</a>
-		  </footer>
-		</div>
-	</section>
-	<section>
-		<h1 class="title ptxl has-text-centered">MONTHLY MONITORING STATUS</h1>
+	<section class="pvxl">
 		<div class="columns">
 			<div class="column">
-				<div id="chart_div"></div>
+				<h1 class="title is-4">STUDENT DASHBOARD REVIEW</h1>
+			</div>
+			<div class="column">
+			</div>
+			<div class="column">
+				<div class="dropdown is-hoverable mlxl ">
+				  <div class="dropdown-trigger">
+				    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+				      <span>Category</span>
+				      <span class="icon is-small">
+				        <i class="fas fa-angle-down" aria-hidden="true"></i>
+				      </span>
+				    </button>
+				  </div>
+				  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+				    <div class="dropdown-content">
+				      <a href="#" class="dropdown-item">
+				        Programming
+				      </a>
+				      <a href="#" class="dropdown-item">
+				        School Lesson
+				      </a>
+				      <a href="#" class="dropdown-item">
+				        College Lesson
+				      </a>
+				      <a href="#" class="dropdown-item">
+				        Literature
+				      </a>
+				    </div>
+				  </div>
+				</div>
+				<div class="dropdown is-hoverable mll">
+				  <div class="dropdown-trigger">
+				    <button class="button" aria-haspopup="true" aria-controls="dropdown-menu3">
+				      <span>Type</span>
+				      <span class="icon is-small">
+				        <i class="fas fa-angle-down" aria-hidden="true"></i>
+				      </span>
+				    </button>
+				  </div>
+				  <div class="dropdown-menu" id="dropdown-menu3" role="menu">
+				    <div class="dropdown-content">
+				      <a href="#" class="dropdown-item">
+				        PDF
+				      </a>
+				      <a href="#" class="dropdown-item">
+				        Slideshow
+				      </a>
+				      <a href="#" class="dropdown-item">
+				        Video
+				      </a>
+				      <a href="#" class="dropdown-item">
+				        Book
+				      </a>
+				    </div>
+				  </div>
 			</div>
 		</div>
+	</section>
+	<section>
+		 <div class="columns is-multiline mtl">
+    	<div class="column is-4">
+    		<div class="card card-custom">
+				  <div class="card-image">
+				    <figure class="image is-4by3">
+				      <img src="http://www.ansonika.com/udema/img/course__list_1.jpg" alt="Placeholder image">
+				    </figure>
+				  </div>
+				  <div class="card-content">
+				  	<small class="is-uppercase has-text-weight-semibold has-text-grey-light is-size-7">engineering</small>
+				  	<h3 class="is-size-5 has-text-weight-semibold">Computer Vision</h3>
+
+				  	<div class="footer-content mtl is-size-7 has-text-right">
+				  		<i class="fas fa-user-friends has-text-info"></i> 1200 <i class="fas fa-star has-text-warning"></i> 4.5
+				  	</div>
+				  </div>
+				</div>
+    	</div>
+    	<div class="column is-4">
+    		<div class="card card-custom">
+				  <div class="card-image">
+				    <figure class="image is-4by3">
+				      <img src="http://www.ansonika.com/udema/img/course__list_1.jpg" alt="Placeholder image">
+				    </figure>
+				  </div>
+				  <div class="card-content">
+				  	<small class="is-uppercase has-text-weight-semibold has-text-grey-light is-size-7">engineering</small>
+				  	<h3 class="is-size-5 has-text-weight-semibold">Computer Vision</h3>
+
+				  	<div class="footer-content mtl is-size-7 has-text-right">
+				  		<i class="fas fa-user-friends has-text-info"></i> 1200 <i class="fas fa-star has-text-warning"></i> 4.5
+				  	</div>
+				  </div>
+				</div>
+    	</div>
+    	<div class="column is-4">
+    		<div class="card card-custom">
+				  <div class="card-image">
+				    <figure class="image is-4by3">
+				      <img src="http://www.ansonika.com/udema/img/course__list_1.jpg" alt="Placeholder image">
+				    </figure>
+				  </div>
+				  <div class="card-content">
+				  	<small class="is-uppercase has-text-weight-semibold has-text-grey-light is-size-7">engineering</small>
+				  	<h3 class="is-size-5 has-text-weight-semibold">Computer Vision</h3>
+
+				  	<div class="footer-content mtl is-size-7 has-text-right">
+				  		<i class="fas fa-user-friends has-text-info"></i> 1200 <i class="fas fa-star has-text-warning"></i> 4.5
+				  	</div>
+				  </div>
+				</div>
+    	</div>
+    	<div class="column is-4">
+    		<div class="card card-custom">
+				  <div class="card-image">
+				    <figure class="image is-4by3">
+				      <img src="http://www.ansonika.com/udema/img/course__list_1.jpg" alt="Placeholder image">
+				    </figure>
+				  </div>
+				  <div class="card-content">
+				  	<small class="is-uppercase has-text-weight-semibold has-text-grey-light is-size-7">engineering</small>
+				  	<h3 class="is-size-5 has-text-weight-semibold">Computer Vision</h3>
+
+				  	<div class="footer-content mtl is-size-7 has-text-right">
+				  		<i class="fas fa-user-friends has-text-info"></i> 1200 <i class="fas fa-star has-text-warning"></i> 4.5
+				  	</div>
+				  </div>
+				</div>
+    	</div>
+    	<div class="column is-4">
+    		<div class="card card-custom">
+				  <div class="card-image">
+				    <figure class="image is-4by3">
+				      <img src="http://www.ansonika.com/udema/img/course__list_1.jpg" alt="Placeholder image">
+				    </figure>
+				  </div>
+				  <div class="card-content">
+				  	<small class="is-uppercase has-text-weight-semibold has-text-grey-light is-size-7">engineering</small>
+				  	<h3 class="is-size-5 has-text-weight-semibold">Computer Vision</h3>
+
+				  	<div class="footer-content mtl is-size-7 has-text-right">
+				  		<i class="fas fa-user-friends has-text-info"></i> 1200 <i class="fas fa-star has-text-warning"></i> 4.5
+				  	</div>
+				  </div>
+				</div>
+    	</div>
+    	<div class="column is-4">
+    		<div class="card card-custom">
+				  <div class="card-image">
+				    <figure class="image is-4by3">
+				      <img src="http://www.ansonika.com/udema/img/course__list_1.jpg" alt="Placeholder image">
+				    </figure>
+				  </div>
+				  <div class="card-content">
+				  	<small class="is-uppercase has-text-weight-semibold has-text-grey-light is-size-7">engineering</small>
+				  	<h3 class="is-size-5 has-text-weight-semibold">Computer Vision</h3>
+
+				  	<div class="footer-content mtl is-size-7 has-text-right">
+				  		<i class="fas fa-user-friends has-text-info"></i> 1200 <i class="fas fa-star has-text-warning"></i> 4.5
+				  	</div>
+				  </div>
+				</div>
+    	</div>
+		</div>
+    	
 	</section>
 </div>
 
