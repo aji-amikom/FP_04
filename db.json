@@ -324,42 +324,6 @@
           "picture": "https://bulma.io/images/placeholders/128x128.png",
           "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
         }
-      },{ 
-        "name": "Learn Japanese",
-        "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
-        "picture" : "https://res.cloudinary.com/arthurweb/image/upload/v1527984974/yt/japan-edit.jpg",
-        "category" : "Literature",
-        "popular" : false,
-        "rating" : {
-          "totalPoint":"4.7"
-        },
-        "materials": {
-          "0":{
-            "name" : "Intro to Japanese - The Hiragana Syllabary, Vowels, Pitch Accents, and More",
-            "video" : "46Jz0QJyhN0"
-          },
-          "1" : {
-            "name" : "The Katakana Syllabary",
-            "video" : "46Jz0QJyhN0"
-          },
-          "2" : {
-            "name" : "First Person Pronouns, or, Ways to Say 'I' in Japanese",
-            "video" : "46Jz0QJyhN0"
-          },
-          "3" : {
-            "name" : "Second-Person Pronouns, or, Ways to Say 'You' in Japanese",
-            "video" : "46Jz0QJyhN0"
-          },
-          "4" : {
-            "name" : "Basic Phrases (How-to Greet, Thank, Introduce Yourself and More)",
-            "video" : "46Jz0QJyhN0"
-          }
-        },
-        "author": {
-          "name" : "Budi Raharjo",
-          "picture": "https://bulma.io/images/placeholders/128x128.png",
-          "description" : "author desc: lorem  ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis."
-        }
       }
     ]
 }
