@@ -7,8 +7,9 @@
 }
 
 .background-student{
-	background-image: url(../img/book.jpg);
+	background: linear-gradient(rgba(7, 86, 221,.8), rgba(20, 46, 91,.8)), url(../img/background-student.jpeg) no-repeat center center fixed;
 }
+
 
 .tabs-centered{
 	display: flex;
