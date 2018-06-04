@@ -1,4 +1,14 @@
+@media only screen and (max-width: 992px) {
+	.navbar-item a {
+		color: #4a4a4a !important;
+	}
+}
+
 /* Navbar */
+
+.navbar-burger span {
+	background-color: #FFFFFF;
+}
 
 .navbar-brand a.navbar-item:hover {
 	background-color: transparent !important;
