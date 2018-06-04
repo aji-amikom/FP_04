@@ -1,4 +1,4 @@
-var uri = "https://www.mocky.io/v2/5b1385443100005a0078be9e";//belum update paling baru nunggu link gambar ready
+var uri = "https://www.mocky.io/v2/5b152ee23200003900b8a25a";//belum update paling baru nunggu link gambar ready
 
 var app = angular.module("RootApp", []);
 
