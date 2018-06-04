@@ -158,106 +158,137 @@
   <div class="container">
     <div class="columns">
     	<div class="column is-two-thirds has-text-left">
-    		<h1 class="is-size-4 is-uppercase has-text-weight-semibold mbm">Latest Courses</h1>
-    		<div class="columns is-multiline mtl">
-		    	<div class="column is-6" ng-repeat="course in courses | filter:query">
-						<div class="card card-custom" data-ng-click="courseClick(course, courses)" data-id="{{ courses.indexOf(course) }}">
-							<div class="card-image">
-								<figure class="image is-4by3">
-									<img ng-src="{{ course.picture }}" alt="Placeholder image">
-								</figure>
+    		<h1 class="is-size-4 is-uppercase has-text-weight-semibold mbm">New Course</h1>
+    		<div class="form-new-course mtl">
+    			<div class="field is-horizontal">
+					  <div class="field-label is-normal">
+					    <label class="label">Title</label>
+					  </div>
+					  <div class="field-body">
+					    <div class="field">
+					      <p class="control is-expanded">
+					        <input class="input" type="text">
+					      </p>
+					    </div>
+					  </div>
+					</div>
+    			<div class="field is-horizontal">
+					  <div class="field-label is-normal">
+					    <label class="label">Description</label>
+					  </div>
+					  <div class="field-body">
+					    <div class="field">
+					      <p class="control is-expanded">
+					        <textarea class="textarea"></textarea>
+					      </p>
+					    </div>
+					  </div>
+					</div>
+					<div class="field is-horizontal">
+					  <div class="field-label is-normal">
+					    <label class="label">Chapters</label>
+					  </div>
+					  <div class="field-body">
+					    <div class="field is-grouped">
 							</div>
-							<div class="card-content">
-								<small class="is-uppercase has-text-weight-semibold has-text-grey-light is-size-7">{{course.category}}</small>
-								<h3 class="is-size-5 has-text-weight-semibold">{{course.name}}</h3>
-				
-								<div class="footer-content mtl is-size-7 has-text-right">
-									<i class="fas fa-user-friends has-text-info"></i> 1200 <i class="fas fa-star has-text-warning"></i> {{ course.rating.totalPoint }}
-								</div>
+					  </div>
+					</div>
+
+					<div class="field is-horizontal">
+					  <div class="field-label is-normal">
+					    <label class="label"></label>
+					  </div>
+					  <div class="field-body">
+					    <div class="field is-grouped">
+							  <p class="control is-expanded">
+							    <input class="input" type="text" placeholder="Chapter 1 title">
+							  </p>
+							  <p class="control">
+							    <a class="button">
+							      +
+							    </a>
+							  </p>
 							</div>
-						</div>
-		    	</div>
-				</div>
-    	</div>
-    	<div class="column has-text-left">
-    		<h1 class="is-size-4 is-uppercase has-text-weight-semibold mbm">Latest Comments</h1>
-    		<div class="box mtl is-radiusless box-latest-comments">
-				  <article class="media single-comment">
-				    <div class="media-left">
-				      <figure class="image is-48x48">
-				        <img src="asset/img/icons/default_avatar.jpg" class="is-rounded" alt="Image">
-				      </figure>
-				    </div>
-				    <div class="media-content">
-				      <div class="content">
-			          <small class="is-italic">17 min ago</small>
-			          <br>
-			          <a href="#">John</a> on your <a href="#" class="has-text-weight-bold">Computer Vision</a>
-			          <p class="mts">How can push ?</p>
-				      </div>
-				    </div>
-				  </article>
-				  <article class="media single-comment">
-				    <div class="media-left">
-				      <figure class="image is-48x48">
-				        <img src="asset/img/icons/default_avatar.jpg" class="is-rounded" alt="Image">
-				      </figure>
-				    </div>
-				    <div class="media-content">
-				      <div class="content">
-			          <small class="is-italic">17 min ago</small>
-			          <br>
-			          <a href="#">John</a> on your <a href="#" class="has-text-weight-bold">Computer Vision</a>
-			          <p class="mts">How can push ?</p>
-				      </div>
-				    </div>
-				  </article>
-				  <article class="media single-comment">
-				    <div class="media-left">
-				      <figure class="image is-48x48">
-				        <img src="asset/img/icons/default_avatar.jpg" class="is-rounded" alt="Image">
-				      </figure>
-				    </div>
-				    <div class="media-content">
-				      <div class="content">
-			          <small class="is-italic">17 min ago</small>
-			          <br>
-			          <a href="#">John</a> on your <a href="#" class="has-text-weight-bold">Computer Vision</a>
-			          <p class="mts">How can push ?</p>
-				      </div>
-				    </div>
-				  </article>
-				  <article class="media single-comment">
-				    <div class="media-left">
-				      <figure class="image is-48x48">
-				        <img src="asset/img/icons/default_avatar.jpg" class="is-rounded" alt="Image">
-				      </figure>
-				    </div>
-				    <div class="media-content">
-				      <div class="content">
-			          <small class="is-italic">17 min ago</small>
-			          <br>
-			          <a href="#">John</a> on your <a href="#" class="has-text-weight-bold">Computer Vision</a>
-			          <p class="mts">How can push ?</p>
-				      </div>
-				    </div>
-				  </article>
-				  <article class="media single-comment">
-				    <div class="media-left">
-				      <figure class="image is-48x48">
-				        <img src="asset/img/icons/default_avatar.jpg" class="is-rounded" alt="Image">
-				      </figure>
-				    </div>
-				    <div class="media-content">
-				      <div class="content">
-			          <small class="is-italic">17 min ago</small>
-			          <br>
-			          <a href="#">John</a> on your <a href="#" class="has-text-weight-bold">Computer Vision</a>
-			          <p class="mts">How can push ?</p>
-				      </div>
-				    </div>
-				  </article>
-				</div>
+					  </div>
+					</div>
+					<div class="field is-horizontal">
+					  <div class="field-label is-normal">
+					    <label class="label"></label>
+					  </div>
+					  <div class="field-body">
+					    <div class="field is-grouped">
+							  <p class="control is-expanded">
+							    <input class="input" type="text" placeholder="Chapter 1 url video">
+							  </p>
+							</div>
+					  </div>
+					</div>
+					<div class="field is-horizontal">
+					  <div class="field-label is-normal">
+					    <label class="label"></label>
+					  </div>
+					  <div class="field-body">
+					    <div class="field is-grouped">
+							  <p class="control is-expanded">
+							    <input class="input" type="text" placeholder="Chapter 2 title">
+							  </p>
+							  <p class="control">
+							    <a class="button">
+							      <i class="fas fa-trash"></i>
+							    </a>
+							  </p>
+							</div>
+					  </div>
+					</div>
+					<div class="field is-horizontal">
+					  <div class="field-label is-normal">
+					    <label class="label"></label>
+					  </div>
+					  <div class="field-body">
+					    <div class="field is-grouped">
+							  <p class="control is-expanded">
+							    <input class="input" type="text" placeholder="Chapter 2 url video">
+							  </p>
+							</div>
+					  </div>
+					</div>
+
+					<div class="field is-horizontal">
+					  <div class="field-label is-normal">
+					    <label class="label">Category</label>
+					  </div>
+					  <div class="field-body">
+					    <div class="field is-narrow">
+					      <div class="control">
+					        <div class="select is-fullwidth">
+					          <select>
+					            <option>Programming</option>
+					            <option>School Lesson</option>
+					            <option>College Lesson</option>
+					            <option>Literature</option>
+					          </select>
+					        </div>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+					<div class="field is-horizontal mtl">
+					  <div class="field-label">
+					    <!-- Left empty for spacing -->
+					  </div>
+					  <div class="field-body">
+					    <div class="field">
+					      <div class="control">
+					        <button class="button is-primary">
+					        	Save
+					        </button>
+					      </div>
+					    </div>
+					  </div>
+					</div>
+
+    		</div>
     	</div>
     </div>
   </div>
