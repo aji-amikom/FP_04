@@ -60,18 +60,20 @@
                                 <form action="#" method="post" name="login">
                                     <div class="field">
                                         <p class="control has-icons-left has-icons-right">
-                                            <input class="input {{ cssEmail }}" type="email" placeholder="Email" id="email" ng-keypress="validateEmail()" required>
+                                            <input class="input {{ cssEmail }}" type="email" ng-model="email" placeholder="Email" id="email" ng-keypress="validateEmail()" name="email" required>
                                             <span class="icon is-small is-left">
-                                            <i class="fas fa-envelope"></i>
+                                                <i class="fas fa-envelope"></i>
                                             </span>
+                                            <p class="help is-danger" ng-show="emailInvalid">email is invalid</p>
                                         </p>
                                     </div>
                                     <div class="field">
                                         <p class="control has-icons-left">
-                                            <input class="input {{ cssPassword }}" type="password" ng-model="password" placeholder="Password" id="password" minlength="6" required>
+                                            <input class="input {{ cssPassword }}" type="password" ng-model="password" placeholder="Password" id="password" required>
                                             <span class="icon is-small is-left">
                                             <i class="fas fa-lock"></i>
                                             </span>
+                                            <p class="help is-danger" ng-show="passwordInvalid">password invalid less than 6 characters</p>
                                         </p>
                                     </div>
                                     <div class="field">
@@ -84,7 +86,7 @@
                                     </div>
                                     <div class="field">
                                         <p class="control">
-                                            <input type="submit" value="Sign In" class="button is-success login-button">
+                                            <input type="submit" value="Sign In" class="button is-success login-button" ng-disabled="submitNotif">
                                         </p>
                                     </div>
                                 </form>

@@ -3,7 +3,7 @@
       {
         "name": "Learn C# Basic",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
-        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
+        "picture" : "https://res.cloudinary.com/arthurweb/image/upload/v1527984926/yt/c-sharp.jpg",
         "category" : "Programming",
         "popular" : true,
         "hasTeacher": true,
@@ -40,7 +40,7 @@
       },{
         "name": "Trigonometry - Mathematics",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
-        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
+        "picture" : "https://res.cloudinary.com/arthurweb/image/upload/v1527984941/yt/trigonometry.jpg",
         "category" : "School Lesson",
         "popular" : true,
         "hasTeacher": true,
@@ -73,7 +73,7 @@
       },{
         "name": "Course Physics",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
-        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
+        "picture" : "https://res.cloudinary.com/arthurweb/image/upload/v1527984974/yt/physics.png",
         "category" : "School Lesson",
         "popular" : true,
         "hasTeacher": true,
@@ -110,7 +110,7 @@
       },{
         "name": "Course Chemistry",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
-        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
+        "picture" : "https://res.cloudinary.com/arthurweb/image/upload/v1527984935/yt/chemistry.jpg",
         "category" : "School Lesson",
         "popular" : false,
         "hasTeacher": true,
@@ -147,7 +147,7 @@
       },{ 
         "name": "Course Biology",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
-        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
+        "picture" : "https://res.cloudinary.com/arthurweb/image/upload/v1527984931/yt/biology.png",
         "category" : "School Lesson",
         "popular" : true,
         "rating" : {
@@ -183,7 +183,7 @@
       },{ 
         "name": "Course Statistic",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
-        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
+        "picture" : "https://res.cloudinary.com/arthurweb/image/upload/v1527984948/yt/statistics-edit.jpg",
         "category" : "College Lesson",
         "popular" : true,
         "rating" : {
@@ -219,7 +219,7 @@
       },{ 
         "name": "Sociology",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
-        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
+        "picture" : "https://res.cloudinary.com/arthurweb/image/upload/v1527984938/yt/sociology-edit.jpg",
         "category" : "College Lesson",
         "popular" : true,
         "rating" : {
@@ -255,7 +255,7 @@
       },{ 
         "name": "Learn jQuery",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
-        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
+        "picture" : "https://res.cloudinary.com/arthurweb/image/upload/v1527984936/yt/jquery-edit.jpg",
         "category" : "Programming",
         "popular" : false,
         "rating" : {
@@ -291,7 +291,7 @@
       },{ 
         "name": "English: Learn from basic",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
-        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
+        "picture" : "https://res.cloudinary.com/arthurweb/image/upload/v1527984935/yt/english.jpg",
         "category" : "Literature",
         "popular" : false,
         "rating" : {
@@ -327,7 +327,7 @@
       },{ 
         "name": "Learn Japanese",
         "description" : " lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis porta eros lacus, nec ultricies elit blandit non. Suspendisse pellentesque mauris sit amet dolor blandit rutrum. Nunc in tempus turpis.",
-        "picture" : "http://www.ansonika.com/udema/img/course__list_1.jpg",
+        "picture" : "https://res.cloudinary.com/arthurweb/image/upload/v1527984974/yt/japan-edit.jpg",
         "category" : "Literature",
         "popular" : false,
         "rating" : {
