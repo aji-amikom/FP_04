@@ -14,6 +14,7 @@
     <!-- app -->
     <link rel="stylesheet" href="asset/css/common.css">
     <link rel="stylesheet" href="asset/css/style.css">
+    <link rel="stylesheet" href="asset/plugins/fontawesome/css/fontawesome-all.min.css">
 
     <!-- bulma -->
     <link rel="stylesheet" href="asset/css/bulma.css">
@@ -21,97 +22,91 @@
 
     <!-- spacing -->
     <link rel="stylesheet" href="asset/plugins/css-spacing/css-spacing.css">
+
     <link rel="shortcut icon" href="asset/img/logo/favicon.png"/>
 
-    <title>Login | Udemam</title>
+    <title>Sign-In | Udemam</title>
 </head>
 
 <div ng-include="'view/navbar.html'"></div>
 
-<body>
-  
-<section class="hero is-info is-img is-bold is-medium mtx" id="login-back">
-    <div class="hero-body">
-      <div class="container">
-        <h1 class="title">
-            <p class="title is-4 has-text-black">
-                Sign in to your account
-            </p>
-            <p class="subtitle is-6 has-text-dark">
-                Your student account is your portal to all things E-Learning: <br>
-                your classroom, projects, forums, career resources, and more!
-            </p>
-        </h1>
-      </div>
-    </div>
-</section>
+<body class="bg-grey-light">
 
-<div class="container" ng-controller="loginController">
+<div class="container mtxl" ng-controller="loginController">
     <div class="columns is-centered is-marginless">
         <div class="column is-9">
             <div class="columns">
-                <div class="column is-half is-offset-one-quarter">
-                    <div class="box">
-                            <div>
-                                <p class="title is-4 has-text-black is-marginless">
-                                    Sign in
-                                </p> 
-                                <hr class="dropdown-divider">  
-                                <form action="#" method="post" name="login">
-                                    <div class="field">
-                                        <p class="control has-icons-left has-icons-right">
-                                            <input class="input {{ cssEmail }}" type="email" ng-model="email" placeholder="Email" id="email" ng-keypress="validateEmail()" name="email" required>
-                                            <span class="icon is-small is-left">
-                                                <i class="fas fa-envelope"></i>
-                                            </span>
-                                            <p class="help is-danger" ng-show="emailInvalid">email is invalid</p>
-                                        </p>
-                                    </div>
-                                    <div class="field">
-                                        <p class="control has-icons-left">
-                                            <input class="input {{ cssPassword }}" type="password" ng-model="password" placeholder="Password" id="password" required>
-                                            <span class="icon is-small is-left">
-                                            <i class="fas fa-lock"></i>
-                                            </span>
-                                            <p class="help is-danger" ng-show="passwordInvalid">password invalid less than 6 characters</p>
-                                        </p>
-                                    </div>
-                                    <div class="field">
-                                      <p class="control">
-                                          <label class="checkbox">
-                                              <input type="checkbox">
-                                              Remember me
-                                            </label>
-                                      </p>
-                                    </div>
-                                    <div class="field">
-                                        <p class="control">
-                                            <input type="submit" value="Sign In" class="button is-success login-button" ng-disabled="submitNotif">
-                                        </p>
-                                    </div>
-                                </form>
-
-                                <div class="columns is-centered">
-                                    <div class="column is-narrow mts">
-                                        <a>Forgot your password ?</a>
-                                    </div>
-                                </div>                                
-
-                                <hr class="dropdown-divider">
-                                <div class="columns is-centered">
-                                    <div class="column is-narrow">
-                                        <p>or sign in with one of these services</p>
-                                    </div>
+                <div class="column is-three-fifths is-offset-one-fifth">
+                    <div class="box box-login">
+                        <div>
+                            <p class="title is-4 has-text-black has-text-weight-light is-marginless">
+                                Sign in
+                            </p>
+                            <p class="form-description">Your student account is your portal to all things Udemam: your classroom, projects, forums, career resources, and more!</p>
+                            <form action="#" method="post" name="login" class="mtl">
+                                <div class="field">
+                                    <p class="control has-icons-left has-icons-right">
+                                        <input class="input {{ cssEmail }}" type="email" ng-model="email" placeholder="Email" id="email" ng-keypress="validateEmail()" name="email" required autocomplete="off">
+                                        <span class="icon is-small is-left">
+                                            <i class="fas fa-envelope"></i>
+                                        </span>
+                                        <p class="help is-danger" ng-show="emailInvalid">email is invalid</p>
+                                    </p>
                                 </div>
-                                <div class="buttons is-centered">
-                                    <a href="" class="button is-info is-narrow">Facebook</a>
-                                    <a href="" class="button is-danger is-narrow">Google</a>
+                                <div class="field">
+                                    <p class="control has-icons-left">
+                                        <input class="input {{ cssPassword }}" type="password" ng-model="password" placeholder="Password" id="password" required>
+                                        <span class="icon is-small is-left">
+                                        <i class="fas fa-lock"></i>
+                                        </span>
+                                        <p class="help is-danger" ng-show="passwordInvalid">password invalid less than 6 characters</p>
+                                    </p>
+                                </div>
+                                <div class="field">
+                                  <p class="control">
+                                      <label class="checkbox description-other-sign-in">
+                                          <input type="checkbox">
+                                          Remember me
+                                        </label>
+                                  </p>
+                                </div>
+                                <div class="field mtl">
+                                    <p class="control">
+                                        <input type="submit" value="Sign In" class="button is-success login-button is-uppercase" ng-disabled="submitNotif">
+                                    </p>
+                                </div>
+                            </form>
+
+                            <div class="columns is-centered">
+                                <div class="column is-narrow mts">
+                                    <a href="#" class="label-forgot-password">Forgot your password ?</a>
+                                </div>
+                            </div>                                
+
+                            <hr class="dropdown-divider">
+                            <div class="columns">
+                                <div class="column is-narrow">
+                                    <p class="description-other-sign-in">or sign in with one of these services</p>
                                 </div>
                             </div>
+                            <div class="buttons is-centered">
+                                <a href="" class="button social-login is-uppercase">
+                                    <div class="provide-social-login">
+                                        <img src="asset/img/svg/facebook.svg">
+                                        Facebook
+                                    </div>
+                                </a>
+                                <a href="" class="button social-login is-uppercase">
+                                    <div class="provide-social-login">
+                                        <img src="asset/img/svg/google.svg">
+                                        Google
+                                    </div></a>
+                            </div>
+                        </div>
                     </div>
                     <div class="columns is-centered is-marginless">
                         <div class="column is-narrow">
-                            <p>No account? <a href="register.html">Create One</a></p>
+                            <p class="label-create-account">No account? <a href="register.html">Create One</a></p>
                         </div>
                     </div>
                 </div>
