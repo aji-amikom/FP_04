@@ -43,7 +43,7 @@ app.controller('registerController',function($scope){
     apassword = false;
     cardName = false;
     cardNumber = false;
-    cardDate = false;
+    cardDate = true;
     cardCvc = false;
 
     //the submit button
